@@ -14,7 +14,7 @@ Source of truth for every plan. Edit freely; routines read it on each run.
 - **Sugar:** zero added sugar. Sweetness only from fruit or veg.
 - **Fibre:** every meal has vegetables and/or legumes; favour wholegrain (fullkorn) pasta, bread, bulgur, barley, oats, potatoes with skin.
 - **Balance, not rules:** rice and wild/Baltic salmon are fine occasionally (rice ≈ once a week max). No toddler warnings or choking notes in recipes.
-- **Never use:** garlic (incl. garlic powder), tofu, coriander (leaf and seed), aubergine, halloumi. Avoid spice blends that usually contain garlic or coriander (curry powder, garam masala, taco mix); build flavour from single spices instead. Asafoetida (hing) + ginger replace garlic in Indian dishes.
+- **Never use:** garlic (incl. garlic powder), tofu, fresh coriander leaf, aubergine, halloumi. No dish where coriander is a dominant flavour; ground coriander inside a spice blend (curry powder, garam masala) is fine. Asafoetida (hing) + ginger replace garlic in Indian dishes.
 
 ## Protein mix per week
 

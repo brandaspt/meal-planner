@@ -1,7 +1,7 @@
 // Checks data/ against prompts/data-format.md and preferences.md.
 import { readFileSync, existsSync } from 'node:fs';
 
-const BANNED = ['garlic', 'vitlök', 'tofu', 'coriander', 'koriander', 'cilantro', 'aubergine', 'eggplant', 'halloumi', 'curry powder', 'garam masala'];
+const BANNED = ['garlic', 'vitlök', 'tofu', 'fresh coriander', 'coriander leaves', 'färsk koriander', 'cilantro', 'aubergine', 'eggplant', 'halloumi'];
 const KINDS = ['cook', 'big', 'assisted', 'leftover'];
 const PROTEINS = ['fish', 'poultry', 'red-meat', 'vegetarian', 'processed'];
 const ISO = /^\d{4}-\d{2}-\d{2}$/;
