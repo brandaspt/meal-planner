@@ -1,0 +1,265 @@
+{
+  "start": "2026-10-31",
+  "end": "2026-11-06",
+  "meals": [
+    { "date": "2026-10-31", "slot": "lunch", "kind": "cook", "recipe": "souvlaki-pittas" },
+    { "date": "2026-10-31", "slot": "dinner", "kind": "big", "recipe": "beef-lentil-ragu" },
+    { "date": "2026-11-01", "slot": "lunch", "kind": "leftover", "recipe": "beef-lentil-ragu", "note": "from Sat dinner" },
+    { "date": "2026-11-01", "slot": "dinner", "kind": "big", "recipe": "chicken-chickpea-curry" },
+    { "date": "2026-11-02", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "beef-lentil-ragu", "note": "from Sat dinner" },
+    { "date": "2026-11-02", "slot": "dinner", "kind": "leftover", "recipe": "chicken-chickpea-curry", "note": "from Sun dinner" },
+    { "date": "2026-11-03", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "chicken-chickpea-curry", "note": "from Sun dinner" },
+    { "date": "2026-11-03", "slot": "dinner", "kind": "cook", "recipe": "cod-crispy-potatoes" },
+    { "date": "2026-11-04", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "cod-crispy-potatoes", "note": "from Tue dinner" },
+    { "date": "2026-11-04", "slot": "dinner", "kind": "cook", "recipe": "barley-minestrone" },
+    { "date": "2026-11-05", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "barley-minestrone", "note": "from Wed dinner" },
+    { "date": "2026-11-05", "slot": "dinner", "kind": "cook", "recipe": "ginger-sesame-chicken" },
+    { "date": "2026-11-06", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "ginger-sesame-chicken", "note": "from Thu dinner" },
+    { "date": "2026-11-06", "slot": "dinner", "kind": "assisted", "recipe": "fish-fingers-slaw" }
+  ],
+  "prep": [
+    { "date": "2026-10-31", "text": "ICA shop (list below). Coop isn't ordered yet, so the list includes pantry items — skip what you have." },
+    { "date": "2026-10-31", "text": "Dinner: ragù makes 6. Box 2.5 for Sun lunch and 1 for Mon lunch." },
+    { "date": "2026-11-01", "text": "Dinner: curry makes 7. Box 2.5 for Mon dinner and 1 for Tue lunch; freeze 1 (first freezer buffer)." },
+    { "date": "2026-11-01", "text": "Make a double batch of bulgur; keep half for Mon dinner." },
+    { "date": "2026-11-02", "text": "No cooking. Evening: move the cod from freezer to fridge to thaw." },
+    { "date": "2026-11-03", "text": "Coop delivery. Dinner: cod makes 4 — box 1 for Wed lunch." },
+    { "date": "2026-11-04", "text": "Dinner: minestrone makes 4 — box 1 for Thu lunch." },
+    { "date": "2026-11-05", "text": "Dinner: chicken makes 4 — box 1 for Fri lunch." },
+    { "date": "2026-11-06", "text": "Assisted-quick dinner. Check fridge/freezer before tomorrow's ICA shop." }
+  ],
+  "recipes": [
+    {
+      "id": "souvlaki-pittas",
+      "name": "Chicken souvlaki pittas",
+      "cuisine": "Greek",
+      "protein": "poultry",
+      "minutes": 25,
+      "appliance": "Air fryer",
+      "portions": 3,
+      "ingredients": [
+        "500 g chicken thigh fillets (kycklinglårfilé), cubed",
+        "1 lemon",
+        "1 tbsp olive oil",
+        "1 tsp dried oregano, 1 tsp smoked paprika",
+        "4 wholemeal pittas (fullkornspitabröd)",
+        "1 cucumber, 2 tomatoes, ½ red onion",
+        "2 dl Turkish yoghurt, a little fresh dill"
+      ],
+      "steps": [
+        "Toss chicken with oil, oregano, paprika, lemon zest and half the juice.",
+        "Air fry at 200°C for 12–14 min, shaking halfway.",
+        "Grate ⅓ of the cucumber, squeeze dry, mix with yoghurt, dill and the rest of the lemon juice.",
+        "Dice the remaining cucumber, tomatoes and onion.",
+        "Warm the pittas 2 min in the air fryer and fill."
+      ]
+    },
+    {
+      "id": "beef-lentil-ragu",
+      "name": "Beef & lentil ragù with wholewheat pasta",
+      "cuisine": "Italian",
+      "protein": "red-meat",
+      "minutes": 45,
+      "appliance": "Stove",
+      "portions": 6,
+      "ingredients": [
+        "500 g beef mince (nötfärs)",
+        "1.5 dl red lentils, rinsed",
+        "1 onion, 2 carrots, 2 celery sticks, finely chopped",
+        "2 × 400 g crushed tomatoes, 1 tbsp tomato purée",
+        "2 dl water, 2 tsp dried oregano, 1 tsp dried thyme, 1 bay leaf",
+        "500 g wholewheat pasta (fullkornspasta)",
+        "Parmesan for the adults"
+      ],
+      "steps": [
+        "Brown the mince in a little oil, 5 min.",
+        "Add onion, carrot and celery; cook 5 min.",
+        "Stir in purée, lentils, tomatoes, water and herbs. Simmer 25 min, lid ajar.",
+        "Cook the pasta meanwhile.",
+        "Serve; parmesan and salt on the table."
+      ],
+      "note": "Freezes well — good candidate for a future freezer buffer."
+    },
+    {
+      "id": "chicken-chickpea-curry",
+      "name": "Chicken, chickpea & sweet potato curry",
+      "cuisine": "Indian",
+      "protein": "poultry",
+      "minutes": 40,
+      "appliance": "Stove",
+      "portions": 7,
+      "ingredients": [
+        "800 g chicken thigh fillets, bite-size",
+        "2 onions, chopped; 3 cm ginger, grated; pinch of asafoetida (hing)",
+        "2 tsp ground cumin, 1 tsp turmeric, 1 tsp mild paprika, ½ tsp cinnamon",
+        "600 g sweet potato, cubed",
+        "400 g crushed tomatoes, 400 ml coconut milk, 2 dl water",
+        "1 can chickpeas, rinsed; 100 g baby spinach",
+        "6 dl bulgur (for Sun + Mon); 1 lemon"
+      ],
+      "steps": [
+        "Soften onion in oil, 5 min. Add ginger, hing and spices; 1 min.",
+        "Add chicken; 3 min.",
+        "Add sweet potato, tomatoes, coconut milk and water. Simmer 20 min.",
+        "Stir in chickpeas and spinach; 3 min. Squeeze in lemon.",
+        "Cook bulgur meanwhile."
+      ]
+    },
+    {
+      "id": "cod-crispy-potatoes",
+      "name": "Lemon-dill cod with crispy potatoes & peas",
+      "cuisine": "Nordic",
+      "protein": "fish",
+      "minutes": 35,
+      "appliance": "Air fryers",
+      "portions": 4,
+      "ingredients": [
+        "600 g cod fillets (torskfilé), thawed",
+        "800 g small potatoes, halved",
+        "1 tbsp olive oil, 1 tsp paprika",
+        "1 lemon, fresh dill, 3 tbsp panko",
+        "400 g frozen peas",
+        "1.5 dl Turkish yoghurt"
+      ],
+      "steps": [
+        "Toss potatoes with oil and paprika. Air fry at 200°C for 20 min, shaking twice.",
+        "Pat cod dry, brush with oil, top with lemon zest, chopped dill and panko.",
+        "Air fry the cod in the second air fryer at 190°C for 10–12 min.",
+        "Boil peas 3 min. Mix yoghurt with dill and lemon juice."
+      ]
+    },
+    {
+      "id": "barley-minestrone",
+      "name": "White bean & barley minestrone",
+      "cuisine": "Italian",
+      "protein": "vegetarian",
+      "minutes": 40,
+      "appliance": "Stove",
+      "portions": 4,
+      "ingredients": [
+        "1 onion, 2 carrots, 2 celery sticks, diced",
+        "400 g crushed tomatoes, 1 l water or unsalted stock",
+        "1 dl pearl barley (korngryn)",
+        "1 tsp dried oregano, 1 tsp dried thyme, 1 bay leaf",
+        "1 courgette, diced; 100 g kale (grönkål), shredded",
+        "1 can white beans, rinsed; 1 lemon",
+        "Parmesan and wholegrain rye bread to serve"
+      ],
+      "steps": [
+        "Soften onion, carrot and celery in oil, 5 min.",
+        "Add tomatoes, water, barley and herbs. Simmer 20 min.",
+        "Add courgette, beans and kale. Simmer 8 min.",
+        "Squeeze in lemon. Parmesan and bread on the table."
+      ]
+    },
+    {
+      "id": "ginger-sesame-chicken",
+      "name": "Ginger-sesame chicken with broccoli & noodles",
+      "cuisine": "Asian",
+      "protein": "poultry",
+      "minutes": 30,
+      "appliance": "Air fryers + stove",
+      "portions": 4,
+      "ingredients": [
+        "700 g chicken thigh fillets, in strips",
+        "3 cm ginger, grated; 1 tbsp cornflour (majsstärkelse)",
+        "2 tbsp sesame oil, 1 tbsp low-salt soy, 1 lime",
+        "1 large broccoli, 1 red pepper",
+        "250 g wholewheat noodles",
+        "2 spring onions, 1 tbsp sesame seeds"
+      ],
+      "steps": [
+        "Toss chicken with ginger, cornflour and 1 tbsp sesame oil.",
+        "Air fry at 200°C for 12 min, shaking halfway.",
+        "Air fry broccoli and pepper in the second air fryer at 200°C for 8 min.",
+        "Cook noodles; toss with soy, remaining sesame oil and lime juice.",
+        "Combine; top with spring onion and sesame seeds. Extra soy or chilli for the adults."
+      ]
+    },
+    {
+      "id": "fish-fingers-slaw",
+      "name": "Fish fingers, wedges & apple slaw",
+      "cuisine": "Family",
+      "protein": "fish",
+      "minutes": 20,
+      "appliance": "Air fryers",
+      "portions": 3,
+      "ingredients": [
+        "1 pack fish fingers (fiskpinnar), lower-salt",
+        "600 g potatoes, in wedges; 1 tbsp oil; 1 tsp paprika",
+        "¼ white cabbage, 1 carrot, 1 apple",
+        "1 dl Turkish yoghurt, ½ lemon"
+      ],
+      "steps": [
+        "Toss wedges with oil and paprika. Air fry at 200°C for 20 min, shaking twice.",
+        "Fish fingers in the second air fryer at 200°C for 10 min.",
+        "Shred cabbage, carrot and apple; mix with yoghurt and lemon juice."
+      ]
+    }
+  ],
+  "ica": [
+    {
+      "section": "Fruit & veg",
+      "items": [
+        "Lemons × 5, lime × 1",
+        "Potatoes 2 kg (small/fast)",
+        "Carrots 1 kg",
+        "Yellow onions × 4, red onion × 1",
+        "Celery × 1 head",
+        "Sweet potatoes ~600 g",
+        "Ginger ~8 cm",
+        "Cucumber × 1, tomatoes × 2",
+        "Broccoli × 1 large, red pepper × 1",
+        "Courgette × 1",
+        "Kale (grönkål) 100 g",
+        "Baby spinach 100 g",
+        "White cabbage × 1 small, apple × 1",
+        "Spring onions × 1 bunch",
+        "Dill × 1 pot"
+      ]
+    },
+    {
+      "section": "Meat & fish",
+      "items": [
+        "Chicken thigh fillets (kycklinglårfilé) 2 kg",
+        "Beef mince (nötfärs) 500 g"
+      ]
+    },
+    {
+      "section": "Dairy",
+      "items": [
+        "Turkish yoghurt 1 l",
+        "Parmesan × 1 piece"
+      ]
+    },
+    {
+      "section": "Bread",
+      "items": [
+        "Wholemeal pittas × 4",
+        "Wholegrain rye bread × 1"
+      ]
+    },
+    {
+      "section": "Frozen",
+      "items": [
+        "Cod fillets (torskfilé) 600 g",
+        "Fish fingers (fiskpinnar) × 1 pack — check < 1 g salt/100 g",
+        "Peas 400 g"
+      ]
+    },
+    {
+      "section": "Pantry — skip what you have",
+      "items": [
+        "Crushed tomatoes 400 g × 4, tomato purée",
+        "Red lentils, pearl barley (korngryn), bulgur",
+        "Wholewheat pasta 500 g, wholewheat noodles 250 g",
+        "Chickpeas × 1 can, white beans × 1 can",
+        "Coconut milk 400 ml × 1",
+        "Panko, cornflour (majsstärkelse)",
+        "Low-salt soy, sesame oil, sesame seeds",
+        "Cumin, turmeric, paprika, smoked paprika, cinnamon, oregano, thyme, bay leaves",
+        "Asafoetida (hing) — world-food shelf"
+      ]
+    }
+  ]
+}
