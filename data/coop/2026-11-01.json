@@ -1,0 +1,108 @@
+{
+  "order_date": "2026-11-01",
+  "delivery": "2026-11-03",
+  "covers": { "from": "2026-11-07", "to": "2026-11-20" },
+  "sketch": [
+    {
+      "week": "2026-11-07",
+      "dishes": [
+        "Salmon & root veg traybake with dill yoghurt",
+        "Prawn, leek & tomato orzo",
+        "Chicken shawarma bowls with bulgur & chickpeas",
+        "Miso-ginger chicken with soba & pak choi",
+        "Swedish meatballs with mash & braised cabbage",
+        "Red lentil & spinach dal with flatbread",
+        "Assisted: air-fryer salmon burgers, wedges & cucumber salad"
+      ]
+    },
+    {
+      "week": "2026-11-14",
+      "dishes": [
+        "Baked cod with tomato, olives & potatoes",
+        "Sesame salmon noodle bowls with edamame",
+        "Chicken tikka-style skewers with raita & flatbread",
+        "Chicken & cashew stir-fry with brown rice",
+        "Bean & beef chili with baked potatoes",
+        "Chickpea shakshuka with wholegrain bread",
+        "Assisted: low-salt chicken nuggets, corn & carrot sticks"
+      ]
+    }
+  ],
+  "list": [
+    {
+      "section": "Pasta, grains & bread",
+      "items": [
+        "Wholewheat orzo (fullkornsorzo) 500 g × 1",
+        "Wholegrain bulgur (fullkornsbulgur) 1 kg × 1",
+        "Red lentils (röda linser) 500 g × 1",
+        "Soba noodles (sobanudlar) 250 g × 1",
+        "Wholewheat noodles (fullkornsnudlar) 250 g × 1",
+        "Brown rice (fullkornsris) 1 kg × 1",
+        "Wholewheat tortillas (fullkornstortilla) 8-pack × 2"
+      ]
+    },
+    {
+      "section": "Tins & jars",
+      "items": [
+        "Crushed tomatoes (krossade tomater) 400 g × 6",
+        "Chickpeas (kikärtor) 380 g × 3",
+        "Kidney beans (kidneybönor) 380 g × 2",
+        "Black beans (svarta bönor) 380 g × 1",
+        "Coconut milk (kokosmjölk) 400 ml × 2",
+        "Tomato paste (tomatpuré) 200 g × 1",
+        "Kalamata olives (kalamataoliver) 1 jar",
+        "Unsalted vegetable stock (grönsaksbuljong, osaltad) 1 pack",
+        "Unsalted cashews (cashewnötter, osaltade) 200 g × 1"
+      ]
+    },
+    {
+      "section": "Oils & condiments",
+      "items": [
+        "Olive oil (olivolja) 500 ml × 1",
+        "Rapeseed oil (rapsolja) 1 l × 1",
+        "Low-salt soy (japansk soja, mindre salt) × 1",
+        "White miso paste (vit misopasta) × 1",
+        "Toasted sesame oil (sesamolja) × 1",
+        "Rice vinegar, unsweetened (risvinäger) × 1",
+        "Tahini × 1"
+      ]
+    },
+    {
+      "section": "Spices (single spices or allium-free blends)",
+      "items": [
+        "Garam masala × 1",
+        "Ground cumin (spiskummin, malen) × 1",
+        "Turmeric (gurkmeja) × 1",
+        "Smoked paprika (rökt paprika) × 1",
+        "Ground cinnamon (kanel) × 1",
+        "Chilli flakes (chiliflakes) × 1",
+        "Dried oregano (oregano) × 1",
+        "Sesame seeds (sesamfrön) × 1",
+        "Asafoetida (hing) × 1, if stocked"
+      ]
+    },
+    {
+      "section": "Frozen",
+      "items": [
+        "Salmon fillets (laxfilé, fryst) 4-pack × 2",
+        "Cod fillets (torskfilé, fryst) 400 g × 1",
+        "Peeled prawns (skalade räkor, frysta) 500 g × 1",
+        "Chopped spinach (hackad spenat) 450 g × 1",
+        "Edamame beans (edamamebönor) 400 g × 1",
+        "Broccoli florets (broccoli) 500 g × 1",
+        "Wok vegetables (wokgrönsaker) 500 g × 1",
+        "Sweetcorn (majs) 500 g × 1",
+        "Salmon burgers (laxburgare, < 1 g salt/100 g) × 1",
+        "Chicken nuggets, low salt (kycklingnuggets) × 1"
+      ]
+    },
+    {
+      "section": "Breakfast",
+      "items": [
+        "Rolled oats (havregryn) 1.5 kg × 1",
+        "Unsweetened muesli (müsli utan tillsatt socker) × 1",
+        "Wholegrain crispbread (fullkornsknäckebröd) × 2"
+      ]
+    }
+  ]
+}
