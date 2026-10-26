@@ -144,12 +144,13 @@ function renderArchive(index, current) {
   ];
 }
 
+// Prefer the order covering this week, else the next upcoming one.
 async function findCoopOrder(index, week) {
-  for (const date of index.coop) {
-    const order = await getJSON(`data/coop/${date}.json`);
-    if (order.covers.from <= week.end && order.covers.to >= week.start) return order;
-  }
-  return null;
+  const orders = await Promise.all(index.coop.map((date) => getJSON(`data/coop/${date}.json`)));
+  const covering = orders.find((o) => o.covers.from <= week.end && o.covers.to >= week.start);
+  if (covering) return covering;
+  const upcoming = orders.filter((o) => o.covers.from > week.end);
+  return upcoming.at(-1) ?? null;
 }
 
 async function main() {
