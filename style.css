@@ -67,6 +67,10 @@ a { color: var(--accent); }
 .prep-day { margin: 0 0 12px; }
 .prep-day ul { margin: 4px 0 0; padding-left: 20px; }
 
+/* Week blocks */
+details.week { background: none; border: none; border-bottom: 1px solid var(--border); border-radius: 0; padding: 4px 0 16px; }
+details.week > summary { font-size: 1.1rem; padding: 16px 0 4px; }
+
 /* Recipes */
 details {
   background: var(--surface);

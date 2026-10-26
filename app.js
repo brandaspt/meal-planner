@@ -53,7 +53,7 @@ function renderMenu(week, recipes) {
   const cell = (meal) => {
     if (!meal) return h('td');
     const recipe = recipes.get(meal.recipe);
-    const name = recipe ? h('a', { href: `#r-${recipe.id}` }, recipe.name) : meal.note;
+    const name = recipe ? h('a', { href: `#r-${week.start}-${recipe.id}` }, recipe.name) : meal.note;
     const meta = [
       meal.solo && 'solo',
       recipe && meal.kind !== 'leftover' && `${recipe.minutes} min`,
@@ -67,7 +67,7 @@ function renderMenu(week, recipes) {
     return h('tr', {}, h('th', {}, formatDate(date, { weekday: 'short', day: 'numeric' })), cell(find('lunch')), cell(find('dinner')));
   });
   return [
-    h('h2', { id: 'menu' }, 'Menu'),
+    h('h2', {}, 'Menu'),
     h('table', { class: 'menu' },
       h('thead', {}, h('tr', {}, h('th'), h('th', {}, 'Lunch'), h('th', {}, 'Dinner'))),
       h('tbody', {}, rows)),
@@ -79,7 +79,7 @@ function renderPrep(week) {
   const byDate = new Map();
   for (const p of week.prep) byDate.set(p.date, [...(byDate.get(p.date) ?? []), p]);
   return [
-    h('h2', { id: 'prep' }, 'Prep plan'),
+    h('h2', {}, 'Prep plan'),
     [...byDate].map(([date, items]) => h('div', { class: 'prep-day' },
       h('strong', {}, formatDate(date)),
       h('ul', {}, items.map((p) => h('li', {}, p.text))))),
@@ -89,8 +89,8 @@ function renderPrep(week) {
 function renderRecipes(week) {
   const editUrl = favouritesEditUrl();
   return [
-    h('h2', { id: 'recipes' }, 'Recipes'),
-    week.recipes.map((r) => h('details', { id: `r-${r.id}` },
+    h('h2', {}, 'Recipes'),
+    week.recipes.map((r) => h('details', { id: `r-${week.start}-${r.id}` },
       h('summary', {}, r.name,
         h('span', { class: 'meta' }, `${r.minutes} min · ${r.appliance} · makes ${r.portions} · ${r.cuisine}`)),
       h('h3', {}, 'Ingredients'),
@@ -102,7 +102,7 @@ function renderRecipes(week) {
   ];
 }
 
-function renderList(id, title, sections, storageKey, intro) {
+function renderList(title, sections, storageKey, intro, id) {
   const boxes = [];
   const list = sections.map((section, s) => [
     h('h3', {}, section.section),
@@ -116,7 +116,7 @@ function renderList(id, title, sections, storageKey, intro) {
   ]);
   const clear = () => boxes.forEach(([box, key]) => { box.checked = false; ticks.set(key, false); });
   return [
-    h('h2', { id }, title),
+    h('h2', id ? { id } : {}, title),
     intro && h('p', { class: 'muted small' }, intro),
     h('div', { class: 'list' }, list),
     h('button', { type: 'button', onclick: clear }, 'Clear ticks'),
@@ -127,7 +127,7 @@ function renderCoop(order) {
   if (!order) return [h('h2', { id: 'coop' }, 'Coop order'), h('p', { class: 'muted' }, 'No Coop order covers this week.')];
   const intro = `Order ${formatDate(order.order_date)} · delivery ${formatDate(order.delivery)} · covers ${formatDate(order.covers.from)} – ${formatDate(order.covers.to)}`;
   return [
-    renderList('coop', 'Coop order', order.list, `coop:${order.order_date}`, intro),
+    renderList('Coop order', order.list, `coop:${order.order_date}`, intro, 'coop'),
     order.sketch?.length > 0 && [
       h('h3', {}, 'Planned dishes'),
       order.sketch.map((w) => h('p', { class: 'small' }, h('strong', {}, `Week of ${formatDate(w.week)}: `), w.dishes.join(', '))),
@@ -153,31 +153,56 @@ async function findCoopOrder(index, week) {
   return upcoming.at(-1) ?? null;
 }
 
+function renderWeek(week, id, open) {
+  const recipes = new Map(week.recipes.map((r) => [r.id, r]));
+  const block = h('details', { class: 'week', id },
+    h('summary', {}, `Week of ${formatDate(week.start)} – ${formatDate(week.end)}`),
+    renderMenu(week, recipes),
+    renderPrep(week),
+    renderRecipes(week),
+    renderList('ICA list', week.ica, `ica:${week.start}`, 'Weekend shop. Ticks are saved on this phone only.'));
+  block.open = open;
+  return block;
+}
+
+// Current week = latest one already started; otherwise the first.
+function weeksToShow(index) {
+  const requested = new URLSearchParams(location.search).get('week');
+  if (requested) return [requested];
+  const today = new Date().toLocaleDateString('sv-SE');
+  const sorted = [...index.weeks].sort();
+  const current = Math.max(0, sorted.findLastIndex((start) => start <= today));
+  return sorted.slice(current, current + 2);
+}
+
+function openTarget() {
+  const target = location.hash && document.querySelector(location.hash);
+  if (!target) return;
+  const block = target.closest('details');
+  if (block) block.open = true;
+  target.scrollIntoView();
+}
+
 async function main() {
   const app = document.getElementById('app');
   try {
     const index = await getJSON('data/index.json');
-    const start = new URLSearchParams(location.search).get('week') ?? index.weeks[0];
-    if (!start) {
+    const starts = weeksToShow(index);
+    if (starts.length === 0) {
       app.replaceChildren(h('p', { class: 'muted' }, 'No menu yet.'));
       return;
     }
-    const week = await getJSON(`data/weeks/${start}.json`);
-    const recipes = new Map(week.recipes.map((r) => [r.id, r]));
-    const coop = await findCoopOrder(index, week);
+    const weeks = await Promise.all(starts.map((start) => getJSON(`data/weeks/${start}.json`)));
+    const coop = await findCoopOrder(index, { start: weeks[0].start, end: weeks.at(-1).end });
 
-    document.getElementById('title').textContent = `Meal plan · ${formatDate(week.start)} – ${formatDate(week.end)}`;
     app.replaceChildren(...[
-      renderMenu(week, recipes),
-      renderPrep(week),
-      renderRecipes(week),
-      renderList('ica', 'ICA list', week.ica, `ica:${week.start}`, 'Weekend shop. Ticks are saved on this phone only.'),
+      weeks.map((week, i) => renderWeek(week, i === 0 ? 'this-week' : 'next-week', i === 0)),
       renderCoop(coop),
-      renderArchive(index, start),
+      renderArchive(index, starts[0]),
     ].flat(Infinity).filter(Boolean));
 
-    const target = location.hash && document.querySelector(location.hash);
-    if (target) target.scrollIntoView();
+    openTarget();
+    window.addEventListener('hashchange', openTarget);
   } catch (err) {
     app.replaceChildren(h('p', {}, `Couldn't load the plan: ${err.message}`));
     throw err;
