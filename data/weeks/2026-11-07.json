@@ -1,0 +1,231 @@
+{
+  "start": "2026-11-07",
+  "end": "2026-11-13",
+  "meals": [
+    { "date": "2026-11-07", "slot": "lunch", "kind": "cook", "recipe": "prawn-leek-orzo" },
+    { "date": "2026-11-07", "slot": "dinner", "kind": "big", "recipe": "meatballs-mash-cabbage" },
+    { "date": "2026-11-08", "slot": "lunch", "kind": "leftover", "recipe": "meatballs-mash-cabbage", "note": "from Sat dinner" },
+    { "date": "2026-11-08", "slot": "dinner", "kind": "big", "recipe": "chicken-shawarma-bowls" },
+    { "date": "2026-11-09", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "meatballs-mash-cabbage", "note": "from Sat dinner" },
+    { "date": "2026-11-09", "slot": "dinner", "kind": "leftover", "recipe": "chicken-shawarma-bowls", "note": "from Sun dinner" },
+    { "date": "2026-11-10", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "chicken-shawarma-bowls", "note": "from Sun dinner" },
+    { "date": "2026-11-10", "slot": "dinner", "kind": "cook", "recipe": "salmon-root-veg-traybake" },
+    { "date": "2026-11-11", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "salmon-root-veg-traybake", "note": "from Tue dinner" },
+    { "date": "2026-11-11", "slot": "dinner", "kind": "cook", "recipe": "red-lentil-spinach-dal" },
+    { "date": "2026-11-12", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "red-lentil-spinach-dal", "note": "from Wed dinner" },
+    { "date": "2026-11-12", "slot": "dinner", "kind": "cook", "recipe": "miso-ginger-chicken-soba" },
+    { "date": "2026-11-13", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "miso-ginger-chicken-soba", "note": "from Thu dinner" },
+    { "date": "2026-11-13", "slot": "dinner", "kind": "assisted", "recipe": "salmon-burgers-wedges" }
+  ],
+  "prep": [
+    { "date": "2026-11-07", "text": "ICA shop (list below). Pantry and frozen items came with the Coop delivery on 3 Nov." },
+    { "date": "2026-11-07", "text": "Lunch: orzo makes 3, eat it all." },
+    { "date": "2026-11-07", "text": "Dinner: meatballs make 7. Box 2.5 for Sun lunch and 1 for Mon lunch; freeze 1." },
+    { "date": "2026-11-08", "text": "Dinner: shawarma makes 6. Box 2.5 for Mon dinner and 1 for Tue lunch. Cook a double batch of bulgur." },
+    { "date": "2026-11-09", "text": "No cooking. Evening: move 4 salmon fillets from freezer to fridge to thaw." },
+    { "date": "2026-11-10", "text": "Dinner: traybake makes 4. Box 1 for Wed lunch." },
+    { "date": "2026-11-11", "text": "Dinner: dal makes 4. Box 1 for Thu lunch." },
+    { "date": "2026-11-12", "text": "Dinner: chicken makes 4. Box 1 for Fri lunch." },
+    { "date": "2026-11-13", "text": "Assisted-quick dinner. Freezer buffer: 1 curry (from 1 Nov) + 1 meatballs — swap into any solo lunch." }
+  ],
+  "recipes": [
+    {
+      "id": "prawn-leek-orzo",
+      "name": "Prawn, leek & tomato orzo",
+      "cuisine": "Mediterranean",
+      "protein": "fish",
+      "minutes": 25,
+      "appliance": "Stove",
+      "portions": 3,
+      "ingredients": [
+        "400 g frozen peeled prawns (skalade räkor), thawed under cold water",
+        "1 leek, sliced; 1 tbsp olive oil",
+        "250 g wholewheat orzo",
+        "400 g crushed tomatoes, 5 dl water or unsalted stock",
+        "½ tsp chilli flakes (adults: extra at the table)",
+        "1 lemon, flat-leaf parsley"
+      ],
+      "steps": [
+        "Soften leek in oil, 5 min.",
+        "Add orzo, tomatoes and water. Simmer 10–12 min, stirring, until the orzo is tender.",
+        "Stir in prawns; heat 2–3 min until hot through.",
+        "Finish with lemon zest, juice and chopped parsley."
+      ]
+    },
+    {
+      "id": "meatballs-mash-cabbage",
+      "name": "Swedish meatballs with mash & braised red cabbage",
+      "cuisine": "Swedish",
+      "protein": "red-meat",
+      "minutes": 45,
+      "appliance": "Air fryers + stove",
+      "portions": 7,
+      "ingredients": [
+        "750 g beef mince (nötfärs)",
+        "1 dl rolled oats, 1 dl milk, 1 egg, 1 onion finely grated, ½ tsp ground allspice (kryddpeppar)",
+        "1.5 kg potatoes, scrubbed; 1–2 dl milk, 1 tbsp unsalted butter",
+        "½ red cabbage, shredded; 1 apple, grated; 1 tbsp rapeseed oil; 1 tbsp water",
+        "2 dl crème fraîche, 2 dl unsalted stock, 1 tsp low-salt soy",
+        "Black pepper"
+      ],
+      "steps": [
+        "Soak oats in milk 5 min; mix with mince, egg, onion and allspice. Roll ~40 balls.",
+        "Air fry in both air fryers at 200°C for 10–12 min, shaking halfway.",
+        "Boil potatoes with skin 20 min; mash with milk and butter.",
+        "Braise cabbage and apple in oil and water, lid on, 15 min.",
+        "Simmer crème fraîche, stock and soy 3 min for the sauce; pepper to taste."
+      ],
+      "note": "Freezes well — freeze 1 portion as buffer."
+    },
+    {
+      "id": "chicken-shawarma-bowls",
+      "name": "Chicken shawarma bowls with bulgur & crispy chickpeas",
+      "cuisine": "Middle Eastern",
+      "protein": "poultry",
+      "minutes": 35,
+      "appliance": "Air fryers + stove",
+      "portions": 6,
+      "ingredients": [
+        "900 g chicken thigh fillets (kycklinglårfilé)",
+        "2 tsp ground cumin, 1 tsp smoked paprika, 1 tsp turmeric, ½ tsp cinnamon; 1 lemon; 2 tbsp olive oil",
+        "1 can chickpeas, rinsed and dried",
+        "6 dl bulgur (for Sun + Mon)",
+        "2 cucumbers, 3 tomatoes, 1 red onion, flat-leaf parsley",
+        "3 dl Turkish yoghurt, 2 tbsp tahini"
+      ],
+      "steps": [
+        "Toss chicken with spices, lemon zest, half the juice and 1 tbsp oil.",
+        "Air fry chicken at 200°C for 14–16 min, shaking halfway; slice.",
+        "Air fry chickpeas with 1 tbsp oil and a pinch of cumin at 200°C for 12 min in the second air fryer.",
+        "Cook bulgur. Chop cucumber, tomato, onion and parsley.",
+        "Whisk yoghurt with tahini and the rest of the lemon juice; build bowls."
+      ]
+    },
+    {
+      "id": "salmon-root-veg-traybake",
+      "name": "Salmon & root veg traybake with dill yoghurt",
+      "cuisine": "Nordic",
+      "protein": "fish",
+      "minutes": 40,
+      "appliance": "Oven",
+      "portions": 4,
+      "ingredients": [
+        "4 salmon fillets (laxfilé), thawed",
+        "500 g beetroot, 3 carrots, 2 parsnips, in wedges",
+        "1 red onion, in wedges; 2 tbsp rapeseed oil; 1 tsp dried thyme",
+        "2 dl Turkish yoghurt, fresh dill, 1 lemon"
+      ],
+      "steps": [
+        "Toss root veg and onion with oil and thyme. Roast at 220°C for 25 min.",
+        "Push veg aside, add salmon, top with lemon zest. Roast 12 min more.",
+        "Mix yoghurt with chopped dill and lemon juice.",
+        "Serve with lemon wedges."
+      ]
+    },
+    {
+      "id": "red-lentil-spinach-dal",
+      "name": "Red lentil & spinach dal with flatbread",
+      "cuisine": "Indian",
+      "protein": "vegetarian",
+      "minutes": 35,
+      "appliance": "Stove",
+      "portions": 4,
+      "ingredients": [
+        "3 dl red lentils, rinsed",
+        "1 onion, chopped; 4 cm ginger, grated; pinch of asafoetida (hing)",
+        "1 tsp ground cumin, 1 tsp turmeric, 1 tsp garam masala",
+        "400 g crushed tomatoes, 400 ml coconut milk, 5 dl water",
+        "225 g frozen chopped spinach; 1 lemon",
+        "Wholewheat tortillas, warmed; Turkish yoghurt"
+      ],
+      "steps": [
+        "Soften onion in oil, 5 min. Add ginger, hing and spices; 1 min.",
+        "Add lentils, tomatoes, coconut milk and water. Simmer 20 min, stirring.",
+        "Stir in spinach; 3 min. Squeeze in lemon.",
+        "Warm tortillas 2 min in the air fryer; serve with yoghurt."
+      ]
+    },
+    {
+      "id": "miso-ginger-chicken-soba",
+      "name": "Miso-ginger chicken with soba & pak choi",
+      "cuisine": "Japanese",
+      "protein": "poultry",
+      "minutes": 30,
+      "appliance": "Air fryer + stove",
+      "portions": 4,
+      "ingredients": [
+        "700 g chicken thigh fillets, in strips",
+        "1 tbsp white miso, 4 cm ginger grated, 1 tbsp sesame oil, 1 tsp rice vinegar",
+        "250 g soba noodles",
+        "2 pak choi, halved; 2 carrots, in ribbons",
+        "2 spring onions, 1 tbsp sesame seeds; low-salt soy at the table"
+      ],
+      "steps": [
+        "Mix miso, ginger, sesame oil and vinegar; toss with chicken.",
+        "Air fry chicken at 200°C for 12 min, shaking halfway.",
+        "Cook soba; add pak choi and carrot for the last 2 min. Drain and rinse.",
+        "Top noodles with chicken, spring onion and sesame seeds."
+      ]
+    },
+    {
+      "id": "salmon-burgers-wedges",
+      "name": "Salmon burgers, wedges & cucumber salad",
+      "cuisine": "Family",
+      "protein": "fish",
+      "minutes": 20,
+      "appliance": "Air fryers",
+      "portions": 3,
+      "ingredients": [
+        "1 pack frozen salmon burgers (laxburgare), lower-salt",
+        "600 g potatoes, in wedges; 1 tbsp oil; 1 tsp paprika",
+        "1 cucumber, fresh dill, 1 dl Turkish yoghurt, ½ lemon"
+      ],
+      "steps": [
+        "Toss wedges with oil and paprika. Air fry at 200°C for 20 min, shaking twice.",
+        "Salmon burgers in the second air fryer at 190°C for 10–12 min.",
+        "Slice cucumber thinly; mix with dill, yoghurt and lemon juice."
+      ]
+    }
+  ],
+  "ica": [
+    {
+      "section": "Fruit & veg",
+      "items": [
+        "Lemons × 6",
+        "Potatoes 2.5 kg",
+        "Carrots 1 kg",
+        "Yellow onions × 3, red onions × 2",
+        "Leek × 1",
+        "Beetroot 500 g, parsnips × 2",
+        "Red cabbage × 1 small, apple × 1",
+        "Ginger ~10 cm",
+        "Cucumbers × 3, tomatoes × 3",
+        "Pak choi × 2, spring onions × 1 bunch",
+        "Flat-leaf parsley × 1 pot, dill × 1 pot"
+      ]
+    },
+    {
+      "section": "Meat",
+      "items": [
+        "Chicken thigh fillets (kycklinglårfilé) 1.6 kg",
+        "Beef mince (nötfärs) 750 g"
+      ]
+    },
+    {
+      "section": "Dairy & eggs",
+      "items": [
+        "Turkish yoghurt 1 l × 2",
+        "Crème fraîche 2 dl",
+        "Milk 1 l",
+        "Unsalted butter (osaltat smör) × 1, if out",
+        "Eggs 6-pack"
+      ]
+    },
+    {
+      "section": "Pantry — not on the Coop order",
+      "items": [
+        "Ground allspice (kryddpeppar), dried thyme — if out"
+      ]
+    }
+  ]
+}
