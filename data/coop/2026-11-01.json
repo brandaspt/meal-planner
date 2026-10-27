@@ -82,7 +82,7 @@
       "items": [
         "Salmon fillets (laxfilé, fryst) 4-pack × 2",
         "Cod fillets (torskfilé, fryst) 400 g × 1",
-        "Peeled prawns (skalade räkor, frysta) 500 g × 1",
+        "Vannamei prawns, peeled (frysta) 400 g × 1",
         "Chopped spinach (hackad spenat) 450 g × 1",
         "Edamame beans (edamamebönor) 400 g × 1",
         "Broccoli florets (broccoli) 500 g × 1",
@@ -123,7 +123,7 @@
         "Leek (purjolök) × 1",
         "Parsnips (palsternacka) 500 g",
         "Ginger (ingefära) 100 g",
-        "Turkish yoghurt 10% 1 kg × 2",
+        "Turkish yoghurt 10% 1 kg × 1",
         "Crème fraîche 2 dl",
         "Eggs 6-pack",
         "Ground allspice (kryddpeppar) — remove from cart if you have it",
@@ -289,10 +289,10 @@
         "quantity": 1
       },
       {
-        "item": "Peeled prawns (skalade räkor, frysta) 500 g × 1",
+        "item": "Vannamei prawns, peeled (frysta) 400 g × 1",
         "status": "added",
-        "product": "Coop Räkor Skalade L 250g",
-        "quantity": 2
+        "product": "Poseidon Räkor Vannamei Kokta & Skalade 400g",
+        "quantity": 1
       },
       {
         "item": "Chopped spinach (hackad spenat) 450 g × 1",
@@ -445,10 +445,10 @@
         "quantity": 2
       },
       {
-        "item": "Turkish yoghurt 10% 1 kg × 2",
+        "item": "Turkish yoghurt 10% 1 kg × 1",
         "status": "added",
-        "product": "Coop Yoghurt Turkisk stil 500g",
-        "quantity": 4
+        "product": "Salakis Turkisk Yoghurt 10% 1kg",
+        "quantity": 1
       },
       {
         "item": "Crème fraîche 2 dl",
