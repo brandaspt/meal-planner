@@ -2,22 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="robots" content="noindex">
-  <title>Weekly Meal Plan</title>
+  <title>Meal Plan</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Meal plan</h1>
-    <nav>
-      <a href="#this-week">This week</a>
-      <a href="#next-week">Next week</a>
-      <a href="#coop">Coop</a>
-      <a href="#archive">Archive</a>
-    </nav>
+    <h1 id="title">Meal plan</h1>
+    <div id="segments" class="segments"></div>
   </header>
   <main id="app"><p class="muted">Loading…</p></main>
+  <nav class="tabs" aria-label="Sections">
+    <button type="button" data-tab="week"><span aria-hidden="true">📅</span>Week</button>
+    <button type="button" data-tab="recipes"><span aria-hidden="true">📖</span>Recipes</button>
+    <button type="button" data-tab="shop"><span aria-hidden="true">🛒</span>Shop</button>
+  </nav>
+  <dialog id="recipe" aria-labelledby="recipe-title"></dialog>
   <script src="app.js"></script>
 </body>
 </html>

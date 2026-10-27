@@ -1,10 +1,3 @@
-const KINDS = {
-  cook: '🍳',
-  big: '🍳',
-  assisted: '⚡',
-  leftover: '♻️',
-};
-
 function h(tag, props = {}, ...children) {
   const el = document.createElement(tag);
   for (const [key, value] of Object.entries(props)) {
@@ -39,6 +32,8 @@ function formatDate(iso, opts = { weekday: 'short', day: 'numeric', month: 'shor
   return new Date(`${iso}T12:00:00`).toLocaleDateString('en-GB', opts);
 }
 
+const today = () => new Date().toLocaleDateString('sv-SE');
+
 // Derived from the GitHub Pages URL: <owner>.github.io/<repo>/
 function favouritesEditUrl() {
   const { hostname, pathname } = location;
@@ -48,80 +43,136 @@ function favouritesEditUrl() {
   return `https://github.com/${owner}/${repo}/edit/main/favourites.md`;
 }
 
-function renderMenu(week, recipes) {
-  const dates = [...new Set(week.meals.map((m) => m.date))].sort();
-  const cell = (meal) => {
-    if (!meal) return h('td');
-    const recipe = recipes.get(meal.recipe);
-    const name = recipe ? h('a', { href: `#r-${week.start}-${recipe.id}` }, recipe.name) : meal.note;
-    const meta = [
-      meal.solo && 'solo',
-      recipe && meal.kind !== 'leftover' && `${recipe.minutes} min`,
-      recipe && meal.note,
-    ].filter(Boolean).join(' · ');
-    return h('td', { class: meal.kind === 'leftover' ? 'leftover' : '' },
-      `${KINDS[meal.kind]} `, name, meta && h('span', { class: 'meta' }, meta));
-  };
-  const rows = dates.map((date) => {
-    const find = (slot) => week.meals.find((m) => m.date === date && m.slot === slot);
-    return h('tr', {}, h('th', {}, formatDate(date, { weekday: 'short', day: 'numeric' })), cell(find('lunch')), cell(find('dinner')));
-  });
-  return [
-    h('h2', {}, 'Menu'),
-    h('table', { class: 'menu' },
-      h('thead', {}, h('tr', {}, h('th'), h('th', {}, 'Lunch'), h('th', {}, 'Dinner'))),
-      h('tbody', {}, rows)),
-    h('p', { class: 'muted small' }, '🍳 cook · ⚡ assisted-quick · ♻️ leftovers'),
-  ];
+const state = { index: null, weeks: [], coop: null, base: '#week', pushedRecipe: false };
+
+// --- Routing: #week[/next], #recipes[/next], #shop[/next|/coop], #recipe/<start>/<id>
+
+const LEGACY = { ica: 'shop', coop: 'shop/coop', 'this-week': 'week', 'next-week': 'week/next' };
+
+function parseRoute(hash) {
+  const path = LEGACY[hash.slice(1)] ?? hash.slice(1);
+  const [tab, ...rest] = path.split('/');
+  if (tab === 'recipe') return { recipe: { start: rest[0], id: rest[1] } };
+  if (tab === 'recipes' || tab === 'shop') return { tab, sub: rest[0] ?? '' };
+  return { tab: 'week', sub: rest[0] ?? '' };
 }
 
-function renderPrep(week) {
-  const byDate = new Map();
-  for (const p of week.prep) byDate.set(p.date, [...(byDate.get(p.date) ?? []), p]);
-  return [
-    h('h2', {}, 'Prep plan'),
-    [...byDate].map(([date, items]) => h('div', { class: 'prep-day' },
-      h('strong', {}, formatDate(date)),
-      h('ul', {}, items.map((p) => h('li', {}, p.text))))),
-  ];
+function go(hash, { push = false } = {}) {
+  if (push) location.hash = hash;
+  else {
+    history.replaceState(null, '', hash);
+    route();
+  }
 }
 
-function renderRecipes(week) {
-  const editUrl = favouritesEditUrl();
-  return [
-    h('h2', {}, 'Recipes'),
-    week.recipes.map((r) => h('details', { id: `r-${week.start}-${r.id}` },
-      h('summary', {}, r.name,
-        h('span', { class: 'meta' }, `${r.minutes} min · ${r.appliance} · makes ${r.portions} · ${r.cuisine}`)),
-      h('h3', {}, 'Ingredients'),
-      h('ul', {}, r.ingredients.map((i) => h('li', {}, i))),
-      h('h3', {}, 'Steps'),
-      h('ol', {}, r.steps.map((s) => h('li', {}, s))),
-      r.note && h('p', { class: 'muted small' }, r.note),
-      editUrl && h('p', { class: 'small' }, h('a', { href: editUrl, target: '_blank', rel: 'noopener' }, '❤️ / 👎 Edit favourites')))),
-  ];
+function route() {
+  const r = parseRoute(location.hash);
+  const dialog = document.getElementById('recipe');
+  if (r.recipe) {
+    if (!document.getElementById('app').dataset.rendered) renderTab(parseRoute(state.base));
+    openRecipe(r.recipe);
+    return;
+  }
+  state.pushedRecipe = false;
+  const base = `#${r.tab}${r.sub ? `/${r.sub}` : ''}`;
+  // Closing the dialog keeps the page and its scroll position.
+  if (dialog.open) {
+    dialog.close();
+    if (base === state.base) return;
+  }
+  state.base = base;
+  renderTab(r);
 }
 
-function renderList(title, sections, storageKey, intro, id) {
+// --- Shared bits
+
+function segments(options, current) {
+  document.getElementById('segments').replaceChildren(...options.map((o) => h('button', {
+    type: 'button',
+    'aria-pressed': String(o.hash === current),
+    onclick: () => go(o.hash),
+  }, o.label)));
+}
+
+function weekOptions(tab) {
+  return state.weeks.map((w, i) => ({ label: i === 0 ? 'This week' : 'Next week', hash: i === 0 ? `#${tab}` : `#${tab}/next` }));
+}
+
+const weekFor = (sub) => state.weeks[sub === 'next' && state.weeks.length > 1 ? 1 : 0];
+const recipeHash = (week, id) => `#recipe/${week.start}/${id}`;
+
+function showRecipe(week, id) {
+  state.pushedRecipe = true;
+  go(recipeHash(week, id), { push: true });
+}
+
+function renderList(sections, storageKey) {
   const boxes = [];
+  const progress = h('p', { class: 'muted small progress' });
+  const update = () => { progress.textContent = `${boxes.filter(([b]) => b.checked).length} of ${boxes.length} ticked · saved on this phone`; };
   const list = sections.map((section, s) => [
     h('h3', {}, section.section),
     section.items.map((item, i) => {
       const key = `${storageKey}:${s}:${i}`;
-      const box = h('input', { type: 'checkbox', onchange: (e) => ticks.set(key, e.target.checked) });
+      const box = h('input', { type: 'checkbox', onchange: (e) => { ticks.set(key, e.target.checked); update(); } });
       box.checked = ticks.has(key);
       boxes.push([box, key]);
       return h('label', {}, box, h('span', {}, item));
     }),
   ]);
-  const clear = () => boxes.forEach(([box, key]) => { box.checked = false; ticks.set(key, false); });
-  return [
-    h('h2', id ? { id } : {}, title),
-    intro && h('p', { class: 'muted small' }, intro),
-    h('div', { class: 'list' }, list),
-    h('button', { type: 'button', onclick: clear }, 'Clear ticks'),
-  ];
+  const clear = () => { boxes.forEach(([box, key]) => { box.checked = false; ticks.set(key, false); }); update(); };
+  update();
+  return [progress, h('div', { class: 'list' }, list), h('button', { type: 'button', class: 'text-button', onclick: clear }, 'Clear ticks')];
 }
+
+// --- Week tab
+
+function mealRow(week, recipes, meal) {
+  const recipe = recipes.get(meal.recipe);
+  const slot = h('span', { class: 'slot' }, meal.slot === 'lunch' ? 'Lunch' : 'Dinner');
+  if (meal.kind === 'leftover') {
+    const meta = [meal.solo && 'solo', recipe && meal.note].filter(Boolean).join(' · ');
+    return h('div', { class: 'meal' }, slot, h('span', { class: 'leftover' }, '♻️ ', recipe ? recipe.name : meal.note, meta && h('span', { class: 'meta' }, meta)));
+  }
+  const meta = [`${recipe.minutes} min`, meal.kind === 'big' && 'big cook', meal.kind === 'assisted' && '⚡ quick'].filter(Boolean).join(' · ');
+  return h('div', { class: 'meal' }, slot, h('span', {},
+    h('button', { type: 'button', class: 'dish', onclick: () => showRecipe(week, recipe.id) }, recipe.name),
+    h('span', { class: 'meta' }, meta)));
+}
+
+function renderWeekTab(sub) {
+  const week = weekFor(sub);
+  const recipes = new Map(week.recipes.map((r) => [r.id, r]));
+  const dates = [...new Set(week.meals.map((m) => m.date))].sort();
+  const cards = dates.map((date) => {
+    const isToday = date === today();
+    const meals = ['lunch', 'dinner'].map((slot) => week.meals.find((m) => m.date === date && m.slot === slot)).filter(Boolean);
+    const prep = week.prep.filter((p) => p.date === date);
+    return h('section', { class: `day${isToday ? ' today' : ''}`, id: `day-${date}` },
+      h('div', { class: 'day-head' }, formatDate(date, { weekday: 'long', day: 'numeric', month: 'short' }), isToday && h('span', { class: 'badge' }, 'Today')),
+      meals.map((m) => mealRow(week, recipes, m)),
+      prep.length > 0 && h('ul', { class: 'prep' }, prep.map((p) => h('li', {}, p.text))));
+  });
+  const archive = state.index.weeks.length > state.weeks.length && h('details', { class: 'archive' },
+    h('summary', {}, 'Earlier weeks'),
+    h('ul', {}, state.index.weeks.map((start) => h('li', {}, h('a', { href: `?week=${start}` }, `Week of ${formatDate(start)}`)))));
+  return [h('p', { class: 'muted small' }, `${formatDate(week.start)} – ${formatDate(week.end)}`), cards, archive];
+}
+
+// --- Recipes tab
+
+function renderRecipesTab(sub) {
+  const week = weekFor(sub);
+  const usedIn = (id) => week.meals
+    .filter((m) => m.recipe === id && m.kind !== 'leftover')
+    .map((m) => `${formatDate(m.date, { weekday: 'short' })} ${m.slot}`);
+  return h('div', { class: 'cards' }, week.recipes.map((r) => h('button', { type: 'button', class: 'card', onclick: () => showRecipe(week, r.id) },
+    h('strong', {}, r.name),
+    h('span', { class: 'meta' }, `${r.minutes} min · ${r.appliance} · ${r.cuisine}`),
+    h('span', { class: 'meta' }, usedIn(r.id).join(', ')))));
+}
+
+// --- Shop tab
 
 function renderCartList(order) {
   const status = new Map(order.cart.items.map((c) => [c.item, c]));
@@ -130,103 +181,115 @@ function renderCartList(order) {
     const added = c?.status === 'added';
     return h('div', { class: 'cart-row' },
       h('span', { class: 'cart-icon' }, added ? '✅' : '⚠️'),
-      h('span', {}, item,
-        h('span', { class: 'meta' }, added ? `In cart: ${c.product} × ${c.quantity}` : 'Not in cart — buy elsewhere or skip')));
+      h('span', {}, item, h('span', { class: 'meta' }, added ? `In cart: ${c.product} × ${c.quantity}` : 'Not in cart — buy elsewhere or skip')));
   };
   const inCart = order.cart.items.filter((c) => c.status === 'added').length;
   return [
-    h('h2', { id: 'coop' }, 'Coop order'),
-    h('p', { class: 'muted small' }, `${inCart} of ${order.cart.items.length} items added to your Coop cart on ${formatDate(order.cart.filled)}. Check out on coop.se.`),
-    order.cart.notes?.length > 0 && [
-      h('h3', {}, 'Worth a look'),
-      h('ul', { class: 'notes' }, order.cart.notes.map((n) => h('li', {}, n))),
-    ],
+    h('p', { class: 'muted small progress' }, `${inCart} of ${order.cart.items.length} items in your Coop cart · filled ${formatDate(order.cart.filled)}`),
+    order.cart.notes?.length > 0 && [h('h3', {}, 'Worth a look'), h('ul', { class: 'notes' }, order.cart.notes.map((n) => h('li', {}, n)))],
     order.list.map((section) => [h('h3', {}, section.section), section.items.map(row)]),
   ];
 }
 
 function renderCoop(order) {
-  if (!order) return [h('h2', { id: 'coop' }, 'Coop order'), h('p', { class: 'muted' }, 'No Coop order covers this week.')];
-  const intro = `Order ${formatDate(order.order_date)} · delivery ${formatDate(order.delivery)} · covers ${formatDate(order.covers.from)} – ${formatDate(order.covers.to)}`;
+  if (!order) return h('p', { class: 'muted' }, 'No Coop order for these weeks.');
   return [
-    order.cart
-      ? [renderCartList(order), h('p', { class: 'muted small' }, intro)]
-      : renderList('Coop order', order.list, `coop:${order.order_date}`, intro, 'coop'),
-    order.sketch?.length > 0 && [
-      h('h3', {}, 'Planned dishes'),
-      order.sketch.map((w) => h('p', { class: 'small' }, h('strong', {}, `Week of ${formatDate(w.week)}: `), w.dishes.join(', '))),
-    ],
+    h('p', { class: 'muted small' }, `Order ${formatDate(order.order_date)} · delivery ${formatDate(order.delivery)}`),
+    order.cart ? renderCartList(order) : renderList(order.list, `coop:${order.order_date}`),
   ];
 }
 
-function renderArchive(index, current) {
-  return [
-    h('h2', { id: 'archive' }, 'Archive'),
-    h('ul', {}, index.weeks.map((start) => h('li', {}, start === current
-      ? h('strong', {}, `Week of ${formatDate(start)}`)
-      : h('a', { href: `?week=${start}` }, `Week of ${formatDate(start)}`)))),
-  ];
+function renderShopTab(sub) {
+  if (sub === 'coop') return renderCoop(state.coop);
+  const week = weekFor(sub);
+  return [h('p', { class: 'muted small' }, `For the weekend of ${formatDate(week.start)}`), renderList(week.ica, `ica:${week.start}`)];
 }
 
-// Prefer the order covering this week, else the next upcoming one.
-async function findCoopOrder(index, week) {
-  const orders = await Promise.all(index.coop.map((date) => getJSON(`data/coop/${date}.json`)));
-  const covering = orders.find((o) => o.covers.from <= week.end && o.covers.to >= week.start);
-  if (covering) return covering;
-  const upcoming = orders.filter((o) => o.covers.from > week.end);
-  return upcoming.at(-1) ?? null;
+// --- Rendering
+
+function renderTab({ tab, sub }) {
+  const app = document.getElementById('app');
+  document.querySelectorAll('.tabs button').forEach((b) => {
+    if (b.dataset.tab === tab) b.setAttribute('aria-current', 'page');
+    else b.removeAttribute('aria-current');
+  });
+  const current = `#${tab}${sub ? `/${sub}` : ''}`;
+  let content;
+  if (tab === 'shop') {
+    const weekLabels = state.weeks.map((w, i) => ({ label: i === 0 ? 'This weekend' : 'Next weekend', hash: i === 0 ? '#shop' : '#shop/next' }));
+    segments([...weekLabels, { label: 'Coop', hash: '#shop/coop' }], current);
+    content = renderShopTab(sub);
+  } else if (tab === 'recipes') {
+    segments(state.weeks.length > 1 ? weekOptions('recipes') : [], current);
+    content = renderRecipesTab(sub);
+  } else {
+    segments(state.weeks.length > 1 ? weekOptions('week') : [], current);
+    content = renderWeekTab(sub);
+  }
+  app.replaceChildren(...[content].flat(Infinity).filter(Boolean));
+  app.dataset.rendered = 'true';
+  window.scrollTo(0, 0);
+  if (tab === 'week') document.getElementById(`day-${today()}`)?.scrollIntoView({ block: 'start' });
 }
 
-function renderWeek(week, id, open) {
-  const recipes = new Map(week.recipes.map((r) => [r.id, r]));
-  const block = h('details', { class: 'week', id },
-    h('summary', {}, `Week of ${formatDate(week.start)} – ${formatDate(week.end)}`),
-    renderMenu(week, recipes),
-    renderPrep(week),
-    renderRecipes(week),
-    renderList('ICA list', week.ica, `ica:${week.start}`, 'Weekend shop. Ticks are saved on this phone only.'));
-  block.open = open;
-  return block;
+function openRecipe({ start, id }) {
+  const dialog = document.getElementById('recipe');
+  const r = state.weeks.find((w) => w.start === start)?.recipes.find((x) => x.id === id);
+  if (!r) return go(state.base);
+  const editUrl = favouritesEditUrl();
+  const close = () => (state.pushedRecipe ? history.back() : go(state.base));
+  // Copy the name so it can be pasted into favourites.md.
+  const copyName = () => navigator.clipboard?.writeText(r.name).catch(() => {});
+  dialog.replaceChildren(
+    h('div', { class: 'dialog-head' },
+      h('span', { class: 'muted small' }, `${r.minutes} min · ${r.appliance} · makes ${r.portions}`),
+      h('button', { type: 'button', class: 'close', 'aria-label': 'Close', onclick: close }, '✕')),
+    h('div', { class: 'dialog-body' },
+      h('h2', { id: 'recipe-title' }, r.name),
+      h('p', { class: 'muted small' }, r.cuisine),
+      h('h3', {}, 'Ingredients'),
+      h('ul', {}, r.ingredients.map((i) => h('li', {}, i))),
+      h('h3', {}, 'Steps'),
+      h('ol', {}, r.steps.map((s) => h('li', {}, s))),
+      r.note && h('p', { class: 'muted small' }, r.note),
+      editUrl && h('a', { class: 'fav', href: editUrl, target: '_blank', rel: 'noopener', onclick: copyName }, '❤️ / 👎 Add to favourites (name copied)')));
+  dialog.oncancel = (e) => { e.preventDefault(); close(); };
+  if (!dialog.open) dialog.showModal();
+  dialog.scrollTop = 0;
 }
 
 // Current week = latest one already started; otherwise the first.
 function weeksToShow(index) {
   const requested = new URLSearchParams(location.search).get('week');
   if (requested) return [requested];
-  const today = new Date().toLocaleDateString('sv-SE');
   const sorted = [...index.weeks].sort();
-  const current = Math.max(0, sorted.findLastIndex((start) => start <= today));
+  const current = Math.max(0, sorted.findLastIndex((start) => start <= today()));
   return sorted.slice(current, current + 2);
 }
 
-function openTarget() {
-  const target = location.hash && document.querySelector(location.hash);
-  if (!target) return;
-  const block = target.closest('details');
-  if (block) block.open = true;
-  target.scrollIntoView();
+// Prefer the order covering these weeks, else the next upcoming one.
+async function findCoopOrder(index, span) {
+  const orders = await Promise.all(index.coop.map((date) => getJSON(`data/coop/${date}.json`)));
+  const covering = orders.find((o) => o.covers.from <= span.end && o.covers.to >= span.start);
+  if (covering) return covering;
+  return orders.filter((o) => o.covers.from > span.end).at(-1) ?? null;
 }
 
 async function main() {
   const app = document.getElementById('app');
   try {
-    const index = await getJSON('data/index.json');
-    const starts = weeksToShow(index);
+    state.index = await getJSON('data/index.json');
+    const starts = weeksToShow(state.index);
     if (starts.length === 0) {
       app.replaceChildren(h('p', { class: 'muted' }, 'No menu yet.'));
       return;
     }
-    const weeks = await Promise.all(starts.map((start) => getJSON(`data/weeks/${start}.json`)));
-    const coop = await findCoopOrder(index, { start: weeks[0].start, end: weeks.at(-1).end });
+    state.weeks = await Promise.all(starts.map((start) => getJSON(`data/weeks/${start}.json`)));
+    state.coop = await findCoopOrder(state.index, { start: state.weeks[0].start, end: state.weeks.at(-1).end });
 
-    app.replaceChildren(...[
-      weeks.map((week, i) => renderWeek(week, i === 0 ? 'this-week' : 'next-week', i === 0)),
-      renderCoop(coop),
-      renderArchive(index, starts[0]),
-    ].flat(Infinity).filter(Boolean));
-
-    openTarget();
-    window.addEventListener('hashchange', openTarget);
+    document.querySelectorAll('.tabs button').forEach((b) => b.addEventListener('click', () => go(`#${b.dataset.tab}`)));
+    window.addEventListener('hashchange', route);
+    route();
   } catch (err) {
     app.replaceChildren(h('p', {}, `Couldn't load the plan: ${err.message}`));
     throw err;
