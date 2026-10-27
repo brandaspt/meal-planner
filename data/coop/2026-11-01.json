@@ -36,8 +36,6 @@
       "section": "Pasta, grains & bread",
       "items": [
         "Wholewheat orzo (fullkornsorzo) 500 g × 1",
-        "Wholegrain bulgur (fullkornsbulgur) 1 kg × 1",
-        "Red lentils (röda linser) 500 g × 1",
         "Soba noodles (sobanudlar) 250 g × 1",
         "Wholewheat noodles (fullkornsnudlar) 250 g × 1",
         "Brown rice (fullkornsris) 1 kg × 1",
@@ -74,12 +72,7 @@
       "section": "Spices (single spices or allium-free blends)",
       "items": [
         "Garam masala × 1",
-        "Ground cumin (spiskummin, malen) × 1",
-        "Turmeric (gurkmeja) × 1",
-        "Smoked paprika (rökt paprika) × 1",
-        "Ground cinnamon (kanel) × 1",
         "Chilli flakes (chiliflakes) × 1",
-        "Dried oregano (oregano) × 1",
         "Sesame seeds (sesamfrön) × 1",
         "Asafoetida (hing) × 1, if stocked"
       ]
@@ -114,18 +107,6 @@
       {
         "item": "Wholewheat orzo (fullkornsorzo) 500 g × 1",
         "status": "missing"
-      },
-      {
-        "item": "Wholegrain bulgur (fullkornsbulgur) 1 kg × 1",
-        "status": "added",
-        "product": "Sevan Bulgur Fullkorn 1kg",
-        "quantity": 1
-      },
-      {
-        "item": "Red lentils (röda linser) 500 g × 1",
-        "status": "added",
-        "product": "Risenta Linser Röda 500g",
-        "quantity": 1
       },
       {
         "item": "Soba noodles (sobanudlar) 250 g × 1",
@@ -250,39 +231,9 @@
         "quantity": 1
       },
       {
-        "item": "Ground cumin (spiskummin, malen) × 1",
-        "status": "added",
-        "product": "Kockens Spiskummin Malen 33g",
-        "quantity": 1
-      },
-      {
-        "item": "Turmeric (gurkmeja) × 1",
-        "status": "added",
-        "product": "Kockens Gurkmeja 43g",
-        "quantity": 1
-      },
-      {
-        "item": "Smoked paprika (rökt paprika) × 1",
-        "status": "added",
-        "product": "Kockens Paprika Rökt 36g",
-        "quantity": 1
-      },
-      {
-        "item": "Ground cinnamon (kanel) × 1",
-        "status": "added",
-        "product": "Kockens Kanel Malen 85g",
-        "quantity": 1
-      },
-      {
         "item": "Chilli flakes (chiliflakes) × 1",
         "status": "added",
         "product": "Kockens Chili Flakes 53g",
-        "quantity": 1
-      },
-      {
-        "item": "Dried oregano (oregano) × 1",
-        "status": "added",
-        "product": "Kockens Oregano 10g",
         "quantity": 1
       },
       {
@@ -379,7 +330,8 @@
       "Wok veg: Änglamark Wokmix Eko — check the pack for garlic.",
       "Muesli: Saltå Kvarn Fruktmüsli — check the label for added sugar.",
       "Soba noodles: only salty instant soba in stock — an extra pack of wholewheat noodles added instead.",
-      "Not at Coop: orzo, unsalted stock, asafoetida — buy at ICA or skip."
+      "Not at Coop: orzo, unsalted stock, asafoetida — buy at ICA or skip.",
+      "Bulgur, red lentils, cumin, turmeric, smoked paprika, cinnamon and oregano: removed — bought at ICA this weekend."
     ]
   }
 }

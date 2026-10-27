@@ -2,31 +2,140 @@
   "start": "2026-10-31",
   "end": "2026-11-06",
   "meals": [
-    { "date": "2026-10-31", "slot": "lunch", "kind": "cook", "recipe": "souvlaki-pittas" },
-    { "date": "2026-10-31", "slot": "dinner", "kind": "big", "recipe": "beef-lentil-ragu" },
-    { "date": "2026-11-01", "slot": "lunch", "kind": "leftover", "recipe": "beef-lentil-ragu", "note": "from Sat dinner" },
-    { "date": "2026-11-01", "slot": "dinner", "kind": "big", "recipe": "chicken-chickpea-curry" },
-    { "date": "2026-11-02", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "beef-lentil-ragu", "note": "from Sat dinner" },
-    { "date": "2026-11-02", "slot": "dinner", "kind": "leftover", "recipe": "chicken-chickpea-curry", "note": "from Sun dinner" },
-    { "date": "2026-11-03", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "chicken-chickpea-curry", "note": "from Sun dinner" },
-    { "date": "2026-11-03", "slot": "dinner", "kind": "cook", "recipe": "cod-crispy-potatoes" },
-    { "date": "2026-11-04", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "cod-crispy-potatoes", "note": "from Tue dinner" },
-    { "date": "2026-11-04", "slot": "dinner", "kind": "cook", "recipe": "barley-minestrone" },
-    { "date": "2026-11-05", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "barley-minestrone", "note": "from Wed dinner" },
-    { "date": "2026-11-05", "slot": "dinner", "kind": "cook", "recipe": "ginger-sesame-chicken" },
-    { "date": "2026-11-06", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "ginger-sesame-chicken", "note": "from Thu dinner" },
-    { "date": "2026-11-06", "slot": "dinner", "kind": "assisted", "recipe": "fish-fingers-slaw" }
+    {
+      "date": "2026-10-31",
+      "slot": "lunch",
+      "kind": "cook",
+      "recipe": "souvlaki-pittas"
+    },
+    {
+      "date": "2026-10-31",
+      "slot": "dinner",
+      "kind": "big",
+      "recipe": "beef-lentil-ragu"
+    },
+    {
+      "date": "2026-11-01",
+      "slot": "lunch",
+      "kind": "leftover",
+      "recipe": "beef-lentil-ragu",
+      "note": "from Sat dinner"
+    },
+    {
+      "date": "2026-11-01",
+      "slot": "dinner",
+      "kind": "big",
+      "recipe": "chicken-chickpea-curry"
+    },
+    {
+      "date": "2026-11-02",
+      "slot": "lunch",
+      "kind": "leftover",
+      "solo": true,
+      "recipe": "beef-lentil-ragu",
+      "note": "from Sat dinner"
+    },
+    {
+      "date": "2026-11-02",
+      "slot": "dinner",
+      "kind": "leftover",
+      "recipe": "chicken-chickpea-curry",
+      "note": "from Sun dinner"
+    },
+    {
+      "date": "2026-11-03",
+      "slot": "lunch",
+      "kind": "leftover",
+      "solo": true,
+      "recipe": "chicken-chickpea-curry",
+      "note": "from Sun dinner"
+    },
+    {
+      "date": "2026-11-03",
+      "slot": "dinner",
+      "kind": "cook",
+      "recipe": "cod-crispy-potatoes"
+    },
+    {
+      "date": "2026-11-04",
+      "slot": "lunch",
+      "kind": "leftover",
+      "solo": true,
+      "recipe": "cod-crispy-potatoes",
+      "note": "from Tue dinner"
+    },
+    {
+      "date": "2026-11-04",
+      "slot": "dinner",
+      "kind": "cook",
+      "recipe": "barley-minestrone"
+    },
+    {
+      "date": "2026-11-05",
+      "slot": "lunch",
+      "kind": "leftover",
+      "solo": true,
+      "recipe": "barley-minestrone",
+      "note": "from Wed dinner"
+    },
+    {
+      "date": "2026-11-05",
+      "slot": "dinner",
+      "kind": "cook",
+      "recipe": "ginger-sesame-chicken"
+    },
+    {
+      "date": "2026-11-06",
+      "slot": "lunch",
+      "kind": "leftover",
+      "solo": true,
+      "recipe": "ginger-sesame-chicken",
+      "note": "from Thu dinner"
+    },
+    {
+      "date": "2026-11-06",
+      "slot": "dinner",
+      "kind": "assisted",
+      "recipe": "fish-fingers-slaw"
+    }
   ],
   "prep": [
-    { "date": "2026-10-31", "text": "ICA shop (list below). Coop isn't ordered yet, so the list includes pantry items — skip what you have." },
-    { "date": "2026-10-31", "text": "Dinner: ragù makes 6. Box 2.5 for Sun lunch and 1 for Mon lunch." },
-    { "date": "2026-11-01", "text": "Dinner: curry makes 7. Box 2.5 for Mon dinner and 1 for Tue lunch; freeze 1 (first freezer buffer)." },
-    { "date": "2026-11-01", "text": "Make a double batch of bulgur; keep half for Mon dinner." },
-    { "date": "2026-11-02", "text": "No cooking. Evening: move the cod from freezer to fridge to thaw." },
-    { "date": "2026-11-03", "text": "Coop delivery. Dinner: cod makes 4 — box 1 for Wed lunch." },
-    { "date": "2026-11-04", "text": "Dinner: minestrone makes 4 — box 1 for Thu lunch." },
-    { "date": "2026-11-05", "text": "Dinner: chicken makes 4 — box 1 for Fri lunch." },
-    { "date": "2026-11-06", "text": "Assisted-quick dinner. Check fridge/freezer before tomorrow's ICA shop." }
+    {
+      "date": "2026-10-31",
+      "text": "ICA shop (list below). Coop isn't ordered yet, so the list includes pantry items — skip what you have."
+    },
+    {
+      "date": "2026-10-31",
+      "text": "Dinner: ragù makes 6. Box 2.5 for Sun lunch and 1 for Mon lunch."
+    },
+    {
+      "date": "2026-11-01",
+      "text": "Dinner: curry makes 7. Box 2.5 for Mon dinner and 1 for Tue lunch; freeze 1 (first freezer buffer)."
+    },
+    {
+      "date": "2026-11-01",
+      "text": "Make a double batch of bulgur; keep half for Mon dinner."
+    },
+    {
+      "date": "2026-11-02",
+      "text": "No cooking. Evening: move the cod from freezer to fridge to thaw."
+    },
+    {
+      "date": "2026-11-03",
+      "text": "Coop delivery. Dinner: cod makes 4 — box 1 for Wed lunch."
+    },
+    {
+      "date": "2026-11-04",
+      "text": "Dinner: minestrone makes 4 — box 1 for Thu lunch."
+    },
+    {
+      "date": "2026-11-05",
+      "text": "Dinner: chicken makes 4 — box 1 for Fri lunch."
+    },
+    {
+      "date": "2026-11-06",
+      "text": "Assisted-quick dinner. Check fridge/freezer before tomorrow's ICA shop."
+    }
   ],
   "recipes": [
     {
@@ -248,15 +357,14 @@
       ]
     },
     {
-      "section": "Pantry — skip what you have",
+      "section": "Pantry — skip what you have (noodles, soy, sesame oil and seeds come with Coop on Tue)",
       "items": [
         "Crushed tomatoes 400 g × 4, tomato purée",
         "Red lentils, pearl barley (korngryn), bulgur",
-        "Wholewheat pasta 500 g, wholewheat noodles 250 g",
+        "Wholewheat pasta 500 g",
         "Chickpeas × 1 can, white beans × 1 can",
         "Coconut milk 400 ml × 1",
         "Panko, cornflour (majsstärkelse)",
-        "Low-salt soy, sesame oil, sesame seeds",
         "Cumin, turmeric, paprika, smoked paprika, cinnamon, oregano, thyme, bay leaves",
         "Asafoetida (hing) — world-food shelf"
       ]
