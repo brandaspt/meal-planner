@@ -111,6 +111,25 @@
         "Cornflour (majsstärkelse) × 1",
         "Fish fingers (fiskpinnar) × 1"
       ]
+    },
+    {
+      "section": "For the week of 7 Nov (moved from ICA)",
+      "items": [
+        "Lemons 500 g pack",
+        "Potatoes, firm (fast potatis) 2 kg",
+        "Potatoes, firm (fast potatis) 900 g",
+        "Carrots (morötter) 1 kg",
+        "Yellow onions (gul lök) 1 kg",
+        "Red onions (rödlök) 300 g",
+        "Leek (purjolök) × 1",
+        "Parsnips (palsternacka) 500 g",
+        "Ginger (ingefära) 100 g",
+        "Turkish yoghurt 10% 1 kg × 2",
+        "Crème fraîche 2 dl",
+        "Eggs 6-pack",
+        "Ground allspice (kryddpeppar) — remove from cart if you have it",
+        "Dried thyme (timjan) — remove from cart if you have it"
+      ]
     }
   ],
   "cart": {
@@ -377,6 +396,90 @@
         "status": "added",
         "product": "Coop Fiskpinnar 450g",
         "quantity": 1
+      },
+      {
+        "item": "Lemons 500 g pack",
+        "status": "added",
+        "product": "Citron 500g",
+        "quantity": 1
+      },
+      {
+        "item": "Potatoes, firm (fast potatis) 2 kg",
+        "status": "added",
+        "product": "Änglamark Potatis Fast Eko 2kg",
+        "quantity": 1
+      },
+      {
+        "item": "Potatoes, firm (fast potatis) 900 g",
+        "status": "added",
+        "product": "Coop Potatis Fast 900g",
+        "quantity": 1
+      },
+      {
+        "item": "Carrots (morötter) 1 kg",
+        "status": "added",
+        "product": "Coop Morötter 1kg",
+        "quantity": 1
+      },
+      {
+        "item": "Yellow onions (gul lök) 1 kg",
+        "status": "added",
+        "product": "Coop Lök Gul 1kg",
+        "quantity": 1
+      },
+      {
+        "item": "Red onions (rödlök) 300 g",
+        "status": "added",
+        "product": "Röd Lök 300g",
+        "quantity": 1
+      },
+      {
+        "item": "Leek (purjolök) × 1",
+        "status": "added",
+        "product": "Purjolök 300g",
+        "quantity": 1
+      },
+      {
+        "item": "Parsnips (palsternacka) 500 g",
+        "status": "added",
+        "product": "Palsternacka 500g",
+        "quantity": 1
+      },
+      {
+        "item": "Ginger (ingefära) 100 g",
+        "status": "added",
+        "product": "Coop Ingefära 50g",
+        "quantity": 2
+      },
+      {
+        "item": "Turkish yoghurt 10% 1 kg × 2",
+        "status": "added",
+        "product": "Salakis Turkisk Yoghurt 10% 1kg",
+        "quantity": 2
+      },
+      {
+        "item": "Crème fraîche 2 dl",
+        "status": "added",
+        "product": "Arla Crème Fraiche 32% Eko 2dl",
+        "quantity": 1
+      },
+      {
+        "item": "Eggs 6-pack",
+        "status": "added",
+        "product": "Uggelsta Ägg 6-pack Frigående",
+        "quantity": 1
+      },
+      {
+        "item": "Ground allspice (kryddpeppar) — remove from cart if you have it",
+        "status": "added",
+        "product": "Kockens Kryddpeppar Malen 40g",
+        "quantity": 1
+      },
+      {
+        "item": "Dried thyme (timjan) — remove from cart if you have it",
+        "status": "added",
+        "product": "Santa Maria Timjan 15g",
+        "quantity": 1
       }
     ],
     "notes": [
@@ -386,7 +489,8 @@
       "Soba noodles: only salty instant soba in stock — an extra pack of wholewheat noodles added instead.",
       "Not at Coop: orzo, unsalted stock, asafoetida — buy at ICA or skip.",
       "Bulgur, red lentils, cumin, turmeric, smoked paprika, cinnamon and oregano: removed — bought at ICA this weekend.",
-      "Fish fingers: Coop's own brand — check the label is under 1 g salt/100 g."
+      "Fish fingers: Coop's own brand — check the label is under 1 g salt/100 g.",
+      "Allspice and thyme were 'if out' on the ICA list — remove them from the cart if you have them."
     ]
   }
 }

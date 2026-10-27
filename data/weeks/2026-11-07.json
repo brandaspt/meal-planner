@@ -2,31 +2,140 @@
   "start": "2026-11-07",
   "end": "2026-11-13",
   "meals": [
-    { "date": "2026-11-07", "slot": "lunch", "kind": "cook", "recipe": "prawn-leek-orzo" },
-    { "date": "2026-11-07", "slot": "dinner", "kind": "big", "recipe": "meatballs-mash-cabbage" },
-    { "date": "2026-11-08", "slot": "lunch", "kind": "leftover", "recipe": "meatballs-mash-cabbage", "note": "from Sat dinner" },
-    { "date": "2026-11-08", "slot": "dinner", "kind": "big", "recipe": "chicken-shawarma-bowls" },
-    { "date": "2026-11-09", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "meatballs-mash-cabbage", "note": "from Sat dinner" },
-    { "date": "2026-11-09", "slot": "dinner", "kind": "leftover", "recipe": "chicken-shawarma-bowls", "note": "from Sun dinner" },
-    { "date": "2026-11-10", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "chicken-shawarma-bowls", "note": "from Sun dinner" },
-    { "date": "2026-11-10", "slot": "dinner", "kind": "cook", "recipe": "salmon-root-veg-traybake" },
-    { "date": "2026-11-11", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "salmon-root-veg-traybake", "note": "from Tue dinner" },
-    { "date": "2026-11-11", "slot": "dinner", "kind": "cook", "recipe": "red-lentil-spinach-dal" },
-    { "date": "2026-11-12", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "red-lentil-spinach-dal", "note": "from Wed dinner" },
-    { "date": "2026-11-12", "slot": "dinner", "kind": "cook", "recipe": "miso-ginger-chicken-soba" },
-    { "date": "2026-11-13", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "miso-ginger-chicken-soba", "note": "from Thu dinner" },
-    { "date": "2026-11-13", "slot": "dinner", "kind": "assisted", "recipe": "salmon-burgers-wedges" }
+    {
+      "date": "2026-11-07",
+      "slot": "lunch",
+      "kind": "cook",
+      "recipe": "prawn-leek-orzo"
+    },
+    {
+      "date": "2026-11-07",
+      "slot": "dinner",
+      "kind": "big",
+      "recipe": "meatballs-mash-cabbage"
+    },
+    {
+      "date": "2026-11-08",
+      "slot": "lunch",
+      "kind": "leftover",
+      "recipe": "meatballs-mash-cabbage",
+      "note": "from Sat dinner"
+    },
+    {
+      "date": "2026-11-08",
+      "slot": "dinner",
+      "kind": "big",
+      "recipe": "chicken-shawarma-bowls"
+    },
+    {
+      "date": "2026-11-09",
+      "slot": "lunch",
+      "kind": "leftover",
+      "solo": true,
+      "recipe": "meatballs-mash-cabbage",
+      "note": "from Sat dinner"
+    },
+    {
+      "date": "2026-11-09",
+      "slot": "dinner",
+      "kind": "leftover",
+      "recipe": "chicken-shawarma-bowls",
+      "note": "from Sun dinner"
+    },
+    {
+      "date": "2026-11-10",
+      "slot": "lunch",
+      "kind": "leftover",
+      "solo": true,
+      "recipe": "chicken-shawarma-bowls",
+      "note": "from Sun dinner"
+    },
+    {
+      "date": "2026-11-10",
+      "slot": "dinner",
+      "kind": "cook",
+      "recipe": "salmon-root-veg-traybake"
+    },
+    {
+      "date": "2026-11-11",
+      "slot": "lunch",
+      "kind": "leftover",
+      "solo": true,
+      "recipe": "salmon-root-veg-traybake",
+      "note": "from Tue dinner"
+    },
+    {
+      "date": "2026-11-11",
+      "slot": "dinner",
+      "kind": "cook",
+      "recipe": "red-lentil-spinach-dal"
+    },
+    {
+      "date": "2026-11-12",
+      "slot": "lunch",
+      "kind": "leftover",
+      "solo": true,
+      "recipe": "red-lentil-spinach-dal",
+      "note": "from Wed dinner"
+    },
+    {
+      "date": "2026-11-12",
+      "slot": "dinner",
+      "kind": "cook",
+      "recipe": "miso-ginger-chicken-soba"
+    },
+    {
+      "date": "2026-11-13",
+      "slot": "lunch",
+      "kind": "leftover",
+      "solo": true,
+      "recipe": "miso-ginger-chicken-soba",
+      "note": "from Thu dinner"
+    },
+    {
+      "date": "2026-11-13",
+      "slot": "dinner",
+      "kind": "assisted",
+      "recipe": "salmon-burgers-wedges"
+    }
   ],
   "prep": [
-    { "date": "2026-11-07", "text": "ICA shop (list below). Pantry and frozen items came with the Coop delivery on 3 Nov." },
-    { "date": "2026-11-07", "text": "Lunch: orzo makes 3, eat it all." },
-    { "date": "2026-11-07", "text": "Dinner: meatballs make 7. Box 2.5 for Sun lunch and 1 for Mon lunch; freeze 1." },
-    { "date": "2026-11-08", "text": "Dinner: shawarma makes 6. Box 2.5 for Mon dinner and 1 for Tue lunch. Cook a double batch of bulgur." },
-    { "date": "2026-11-09", "text": "No cooking. Evening: move 4 salmon fillets from freezer to fridge to thaw." },
-    { "date": "2026-11-10", "text": "Dinner: traybake makes 4. Box 1 for Wed lunch." },
-    { "date": "2026-11-11", "text": "Dinner: dal makes 4. Box 1 for Thu lunch." },
-    { "date": "2026-11-12", "text": "Dinner: chicken makes 4. Box 1 for Fri lunch." },
-    { "date": "2026-11-13", "text": "Assisted-quick dinner. Freezer buffer: 1 curry (from 1 Nov) + 1 meatballs — swap into any solo lunch." }
+    {
+      "date": "2026-11-07",
+      "text": "ICA shop (list below). Pantry and frozen items came with the Coop delivery on 3 Nov."
+    },
+    {
+      "date": "2026-11-07",
+      "text": "Lunch: orzo makes 3, eat it all."
+    },
+    {
+      "date": "2026-11-07",
+      "text": "Dinner: meatballs make 7. Box 2.5 for Sun lunch and 1 for Mon lunch; freeze 1."
+    },
+    {
+      "date": "2026-11-08",
+      "text": "Dinner: shawarma makes 6. Box 2.5 for Mon dinner and 1 for Tue lunch. Cook a double batch of bulgur."
+    },
+    {
+      "date": "2026-11-09",
+      "text": "No cooking. Evening: move 4 salmon fillets from freezer to fridge to thaw."
+    },
+    {
+      "date": "2026-11-10",
+      "text": "Dinner: traybake makes 4. Box 1 for Wed lunch."
+    },
+    {
+      "date": "2026-11-11",
+      "text": "Dinner: dal makes 4. Box 1 for Thu lunch."
+    },
+    {
+      "date": "2026-11-12",
+      "text": "Dinner: chicken makes 4. Box 1 for Fri lunch."
+    },
+    {
+      "date": "2026-11-13",
+      "text": "Assisted-quick dinner. Freezer buffer: 1 curry (from 1 Nov) + 1 meatballs — swap into any solo lunch."
+    }
   ],
   "recipes": [
     {
@@ -191,14 +300,8 @@
     {
       "section": "Fruit & veg",
       "items": [
-        "Lemons × 6",
-        "Potatoes 2.5 kg",
-        "Carrots 1 kg",
-        "Yellow onions × 3, red onions × 2",
-        "Leek × 1",
-        "Beetroot 500 g, parsnips × 2",
+        "Beetroot 500 g",
         "Red cabbage × 1 small, apple × 1",
-        "Ginger ~10 cm",
         "Cucumbers × 3, tomatoes × 3",
         "Pak choi × 2, spring onions × 1 bunch",
         "Flat-leaf parsley × 1 pot, dill × 1 pot"
@@ -212,19 +315,10 @@
       ]
     },
     {
-      "section": "Dairy & eggs",
+      "section": "Dairy",
       "items": [
-        "Turkish yoghurt 1 l × 2",
-        "Crème fraîche 2 dl",
         "Milk 1 l",
-        "Unsalted butter (osaltat smör) × 1, if out",
-        "Eggs 6-pack"
-      ]
-    },
-    {
-      "section": "Pantry — not on the Coop order",
-      "items": [
-        "Ground allspice (kryddpeppar), dried thyme — if out"
+        "Unsalted butter (osaltat smör) × 1, if out"
       ]
     }
   ]
