@@ -123,11 +123,35 @@ function renderList(title, sections, storageKey, intro, id) {
   ];
 }
 
+function renderCartList(order) {
+  const status = new Map(order.cart.items.map((c) => [c.item, c]));
+  const row = (item) => {
+    const c = status.get(item);
+    const added = c?.status === 'added';
+    return h('div', { class: 'cart-row' },
+      h('span', { class: 'cart-icon' }, added ? '✅' : '⚠️'),
+      h('span', {}, item,
+        h('span', { class: 'meta' }, added ? `In cart: ${c.product} × ${c.quantity}` : 'Not in cart — buy elsewhere or skip')));
+  };
+  const inCart = order.cart.items.filter((c) => c.status === 'added').length;
+  return [
+    h('h2', { id: 'coop' }, 'Coop order'),
+    h('p', { class: 'muted small' }, `${inCart} of ${order.cart.items.length} items added to your Coop cart on ${formatDate(order.cart.filled)}. Check out on coop.se.`),
+    order.cart.notes?.length > 0 && [
+      h('h3', {}, 'Worth a look'),
+      h('ul', { class: 'notes' }, order.cart.notes.map((n) => h('li', {}, n))),
+    ],
+    order.list.map((section) => [h('h3', {}, section.section), section.items.map(row)]),
+  ];
+}
+
 function renderCoop(order) {
   if (!order) return [h('h2', { id: 'coop' }, 'Coop order'), h('p', { class: 'muted' }, 'No Coop order covers this week.')];
   const intro = `Order ${formatDate(order.order_date)} · delivery ${formatDate(order.delivery)} · covers ${formatDate(order.covers.from)} – ${formatDate(order.covers.to)}`;
   return [
-    renderList('Coop order', order.list, `coop:${order.order_date}`, intro, 'coop'),
+    order.cart
+      ? [renderCartList(order), h('p', { class: 'muted small' }, intro)]
+      : renderList('Coop order', order.list, `coop:${order.order_date}`, intro, 'coop'),
     order.sketch?.length > 0 && [
       h('h3', {}, 'Planned dishes'),
       order.sketch.map((w) => h('p', { class: 'small' }, h('strong', {}, `Week of ${formatDate(w.week)}: `), w.dishes.join(', '))),
