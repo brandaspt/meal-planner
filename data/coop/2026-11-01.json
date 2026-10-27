@@ -99,6 +99,18 @@
         "Unsweetened muesli (müsli utan tillsatt socker) × 1",
         "Wholegrain crispbread (fullkornsknäckebröd) × 2"
       ]
+    },
+    {
+      "section": "For this week (moved from ICA)",
+      "items": [
+        "Frozen peas (ärtor) 600 g × 1",
+        "Panko × 1",
+        "Pearl barley (korngryn) 500 g × 1",
+        "White beans (vita bönor) × 1 can",
+        "Wholegrain rye bread (fullkornsrågbröd) × 1",
+        "Cornflour (majsstärkelse) × 1",
+        "Fish fingers (fiskpinnar) × 1"
+      ]
     }
   ],
   "cart": {
@@ -323,6 +335,48 @@
         "status": "added",
         "product": "Leksands Trekantsknäcke Normalgräddat Eko 200g",
         "quantity": 2
+      },
+      {
+        "item": "Frozen peas (ärtor) 600 g × 1",
+        "status": "added",
+        "product": "Coop Ärtor 600g",
+        "quantity": 1
+      },
+      {
+        "item": "Panko × 1",
+        "status": "added",
+        "product": "Coop Panko 180g",
+        "quantity": 1
+      },
+      {
+        "item": "Pearl barley (korngryn) 500 g × 1",
+        "status": "added",
+        "product": "GoGreen Korngryn 500g",
+        "quantity": 1
+      },
+      {
+        "item": "White beans (vita bönor) × 1 can",
+        "status": "added",
+        "product": "Zeta Vita Bönor Stora 480g",
+        "quantity": 1
+      },
+      {
+        "item": "Wholegrain rye bread (fullkornsrågbröd) × 1",
+        "status": "added",
+        "product": "Coop Fullkornsrågbröd 500g",
+        "quantity": 1
+      },
+      {
+        "item": "Cornflour (majsstärkelse) × 1",
+        "status": "added",
+        "product": "Coop Majsstärkelse 400g",
+        "quantity": 1
+      },
+      {
+        "item": "Fish fingers (fiskpinnar) × 1",
+        "status": "added",
+        "product": "Coop Fiskpinnar 450g",
+        "quantity": 1
       }
     ],
     "notes": [
@@ -331,7 +385,8 @@
       "Muesli: Saltå Kvarn Fruktmüsli — check the label for added sugar.",
       "Soba noodles: only salty instant soba in stock — an extra pack of wholewheat noodles added instead.",
       "Not at Coop: orzo, unsalted stock, asafoetida — buy at ICA or skip.",
-      "Bulgur, red lentils, cumin, turmeric, smoked paprika, cinnamon and oregano: removed — bought at ICA this weekend."
+      "Bulgur, red lentils, cumin, turmeric, smoked paprika, cinnamon and oregano: removed — bought at ICA this weekend.",
+      "Fish fingers: Coop's own brand — check the label is under 1 g salt/100 g."
     ]
   }
 }

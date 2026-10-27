@@ -122,7 +122,7 @@
     },
     {
       "date": "2026-11-03",
-      "text": "Coop delivery. Dinner: cod makes 4 — box 1 for Wed lunch."
+      "text": "Coop delivery (peas, panko, barley, white beans, rye bread, cornflour, fish fingers and staples). Dinner: cod makes 4 — box 1 for Wed lunch."
     },
     {
       "date": "2026-11-04",
@@ -344,27 +344,23 @@
     {
       "section": "Bread",
       "items": [
-        "Wholemeal pittas × 4",
-        "Wholegrain rye bread × 1"
+        "Wholemeal pittas × 4"
       ]
     },
     {
       "section": "Frozen",
       "items": [
-        "Cod fillets (torskfilé) 600 g",
-        "Fish fingers (fiskpinnar) × 1 pack — check < 1 g salt/100 g",
-        "Peas 400 g"
+        "Cod fillets (torskfilé) 600 g"
       ]
     },
     {
-      "section": "Pantry — skip what you have (noodles, soy, sesame oil and seeds come with Coop on Tue)",
+      "section": "Pantry — skip what you have (needed before Coop arrives Tue)",
       "items": [
         "Crushed tomatoes 400 g × 4, tomato purée",
-        "Red lentils, pearl barley (korngryn), bulgur",
+        "Red lentils, bulgur",
         "Wholewheat pasta 500 g",
-        "Chickpeas × 1 can, white beans × 1 can",
+        "Chickpeas × 1 can",
         "Coconut milk 400 ml × 1",
-        "Panko, cornflour (majsstärkelse)",
         "Cumin, turmeric, paprika, smoked paprika, cinnamon, oregano, thyme, bay leaves",
         "Asafoetida (hing) — world-food shelf"
       ]
