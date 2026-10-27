@@ -116,8 +116,7 @@
       "section": "For the week of 7 Nov (moved from ICA)",
       "items": [
         "Lemons 500 g pack",
-        "Potatoes, firm (fast potatis) 2 kg",
-        "Potatoes, firm (fast potatis) 900 g",
+        "Potatoes, firm (fast potatis) 2.7 kg",
         "Carrots (morötter) 1 kg",
         "Yellow onions (gul lök) 1 kg",
         "Red onions (rödlök) 300 g",
@@ -152,7 +151,7 @@
       {
         "item": "Brown rice (fullkornsris) 1 kg × 1",
         "status": "added",
-        "product": "Änglamark Råris Eko 1kg",
+        "product": "Coop Ris Fullkorn 1kg",
         "quantity": 1
       },
       {
@@ -222,13 +221,13 @@
       {
         "item": "Rapeseed oil (rapsolja) 1 l × 1",
         "status": "added",
-        "product": "Zeta Rapsolja 90cl",
+        "product": "Coop Rapsolja 1L",
         "quantity": 1
       },
       {
         "item": "Low-salt soy (japansk soja, mindre salt) × 1",
         "status": "added",
-        "product": "Kikkoman Soja Japansk 150ml",
+        "product": "Coop Soja japansk 500ml",
         "quantity": 1
       },
       {
@@ -292,8 +291,8 @@
       {
         "item": "Peeled prawns (skalade räkor, frysta) 500 g × 1",
         "status": "added",
-        "product": "Poseidon Räkor Vannamei Kokta & Skalade 400g",
-        "quantity": 1
+        "product": "Coop Räkor Skalade L 250g",
+        "quantity": 2
       },
       {
         "item": "Chopped spinach (hackad spenat) 450 g × 1",
@@ -352,7 +351,7 @@
       {
         "item": "Wholegrain crispbread (fullkornsknäckebröd) × 2",
         "status": "added",
-        "product": "Leksands Trekantsknäcke Normalgräddat Eko 200g",
+        "product": "Coop Knäckebröd Råg 250g",
         "quantity": 2
       },
       {
@@ -404,16 +403,10 @@
         "quantity": 1
       },
       {
-        "item": "Potatoes, firm (fast potatis) 2 kg",
-        "status": "added",
-        "product": "Änglamark Potatis Fast Eko 2kg",
-        "quantity": 1
-      },
-      {
-        "item": "Potatoes, firm (fast potatis) 900 g",
+        "item": "Potatoes, firm (fast potatis) 2.7 kg",
         "status": "added",
         "product": "Coop Potatis Fast 900g",
-        "quantity": 1
+        "quantity": 3
       },
       {
         "item": "Carrots (morötter) 1 kg",
@@ -454,19 +447,19 @@
       {
         "item": "Turkish yoghurt 10% 1 kg × 2",
         "status": "added",
-        "product": "Salakis Turkisk Yoghurt 10% 1kg",
-        "quantity": 2
+        "product": "Coop Yoghurt Turkisk stil 500g",
+        "quantity": 4
       },
       {
         "item": "Crème fraîche 2 dl",
         "status": "added",
-        "product": "Arla Crème Fraiche 32% Eko 2dl",
+        "product": "Coop Crème Fraiche 32% 2dl",
         "quantity": 1
       },
       {
         "item": "Eggs 6-pack",
         "status": "added",
-        "product": "Uggelsta Ägg 6-pack Frigående",
+        "product": "Coop Ägg 6-pack M/L Frigående",
         "quantity": 1
       },
       {
@@ -478,12 +471,12 @@
       {
         "item": "Dried thyme (timjan) — remove from cart if you have it",
         "status": "added",
-        "product": "Santa Maria Timjan 15g",
+        "product": "Coop Timjan 20g",
         "quantity": 1
       }
     ],
     "notes": [
-      "Soy: no low-salt soy in your store — regular Kikkoman added.",
+      "Soy: no low-salt soy in your store — regular Coop soy added.",
       "Wok veg: Änglamark Wokmix Eko — check the pack for garlic.",
       "Muesli: Saltå Kvarn Fruktmüsli — check the label for added sugar.",
       "Soba noodles: only salty instant soba in stock — an extra pack of wholewheat noodles added instead.",
