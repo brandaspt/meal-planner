@@ -82,7 +82,6 @@
       "items": [
         "Salmon fillets (laxfilé, fryst) 4-pack × 2",
         "Cod fillets (torskfilé, fryst) 400 g × 1",
-        "Vannamei prawns, peeled (frysta) 400 g × 1",
         "Chopped spinach (hackad spenat) 450 g × 1",
         "Edamame beans (edamamebönor) 400 g × 1",
         "Broccoli florets (broccoli) 500 g × 1",
@@ -289,12 +288,6 @@
         "quantity": 1
       },
       {
-        "item": "Vannamei prawns, peeled (frysta) 400 g × 1",
-        "status": "added",
-        "product": "Poseidon Räkor Vannamei Kokta & Skalade 400g",
-        "quantity": 1
-      },
-      {
         "item": "Chopped spinach (hackad spenat) 450 g × 1",
         "status": "added",
         "product": "Coop Spenat Hackad 450g",
@@ -483,7 +476,8 @@
       "Not at Coop: orzo, unsalted stock, asafoetida — buy at ICA or skip.",
       "Bulgur, red lentils, cumin, turmeric, smoked paprika, cinnamon and oregano: removed — bought at ICA this weekend.",
       "Fish fingers: Coop's own brand — check the label is under 1 g salt/100 g.",
-      "Allspice and thyme were 'if out' on the ICA list — remove them from the cart if you have them."
+      "Allspice and thyme were 'if out' on the ICA list — remove them from the cart if you have them.",
+      "Prawns: on the ICA list for 7 Nov instead — hand-pick large ones."
     ]
   }
 }
