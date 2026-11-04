@@ -140,7 +140,7 @@
   "recipes": [
     {
       "id": "prawn-leek-orzo",
-      "name": "Prawn, leek & tomato orzo",
+      "name": "Prawn & tomato orzo",
       "cuisine": "Mediterranean",
       "protein": "fish",
       "minutes": 30,
@@ -148,14 +148,14 @@
       "portions": 3,
       "ingredients": [
         "400 g frozen peeled vannamei prawns, thawed under cold water",
-        "1 leek, sliced; 2 tbsp olive oil",
+        "150 g frozen chopped onion; 2 tbsp olive oil",
         "1 tbsp tomato purée, 1 tsp smoked paprika, ½ tsp chilli flakes (adults: extra at the table)",
         "250 g wholewheat orzo",
         "400 g crushed tomatoes, 5 dl water or unsalted stock",
         "1 lemon, flat-leaf parsley, 1 tbsp butter"
       ],
       "steps": [
-        "Soften leek in oil until golden, 8 min.",
+        "Cook onion in oil until the water is gone and it turns golden, 8–10 min.",
         "Add purée, paprika and chilli; fry 1–2 min until the purée darkens.",
         "Add orzo, tomatoes and water. Simmer 10–12 min, stirring, until the orzo is tender.",
         "Stir in prawns; heat 2–3 min until hot through.",
@@ -172,7 +172,7 @@
       "portions": 7,
       "ingredients": [
         "750 g beef mince (nötfärs)",
-        "1 dl rolled oats, 1 dl milk, 1 egg, 1 onion finely grated, ½ tsp ground allspice (kryddpeppar), ¼ tsp nutmeg, black pepper",
+        "1 dl rolled oats, 1 dl milk, 1 egg, 100 g frozen chopped onion (thawed, squeezed), ½ tsp ground allspice (kryddpeppar), ¼ tsp nutmeg, black pepper",
         "1.5 kg potatoes, scrubbed; 1–2 dl milk, 1 tbsp unsalted butter",
         "½ red cabbage, shredded; 1 apple, grated; 1 tbsp rapeseed oil; 1 tbsp water; ½ tsp cinnamon; 1 tbsp rice vinegar",
         "250 g mushrooms (champinjoner), finely chopped; 1 tbsp butter",
@@ -200,14 +200,14 @@
         "2 tsp ground cumin, 1 tsp smoked paprika, 1 tsp turmeric, ½ tsp cinnamon; 1 lemon; 2 tbsp olive oil",
         "1 can chickpeas, rinsed and dried",
         "6 dl bulgur (for Sun + Mon)",
-        "2 cucumbers, 3 tomatoes, 1 red onion, flat-leaf parsley",
+        "2 cucumbers, 3 tomatoes, 2 spring onions, flat-leaf parsley",
         "3 dl Turkish yoghurt, 2 tbsp tahini"
       ],
       "steps": [
         "Toss chicken with spices, lemon zest, half the juice and 1 tbsp oil.",
         "Air fry chicken at 200°C for 14–16 min, shaking halfway; slice.",
         "Air fry chickpeas with 1 tbsp oil and a pinch of cumin at 200°C for 12 min in the second air fryer.",
-        "Cook bulgur. Chop cucumber, tomato, onion and parsley.",
+        "Cook bulgur. Chop cucumber and tomato; snip spring onion and parsley with scissors.",
         "Whisk yoghurt with tahini and the rest of the lemon juice; build bowls."
       ]
     },
@@ -222,11 +222,11 @@
       "ingredients": [
         "4 salmon fillets (laxfilé), thawed",
         "500 g beetroot, 3 carrots, 2 parsnips, in wedges",
-        "1 red onion, in wedges; 2 tbsp rapeseed oil; 1 tsp dried thyme, 1 tsp ground cumin, 1 tsp smoked paprika, black pepper",
+        "2 tbsp rapeseed oil; 1 tsp dried thyme, 1 tsp ground cumin, 1 tsp smoked paprika, black pepper",
         "2 dl Turkish yoghurt, fresh dill, 1 lemon, olive oil to finish"
       ],
       "steps": [
-        "Toss root veg and onion with oil, thyme, cumin, paprika and pepper. Roast at 220°C for 25 min, until the edges char.",
+        "Toss root veg with oil, thyme, cumin, paprika and pepper. Roast at 220°C for 25 min, until the edges char.",
         "Push veg aside, add salmon, top with lemon zest and pepper. Roast 12 min more.",
         "Mix yoghurt with plenty of chopped dill and half the lemon juice.",
         "Squeeze the rest of the lemon over the veg, drizzle with olive oil and serve."
@@ -242,14 +242,14 @@
       "portions": 4,
       "ingredients": [
         "3 dl red lentils, rinsed",
-        "1 onion, chopped; 4 cm ginger, grated; pinch of asafoetida (hing)",
+        "100 g frozen chopped onion; 4 cm ginger, grated; pinch of asafoetida (hing)",
         "1 tsp ground cumin, 1 tsp turmeric, 2 tsp garam masala (1 for the end); 1 tbsp tomato purée",
         "400 g crushed tomatoes, 400 ml coconut milk, 5 dl water",
         "225 g frozen chopped spinach; 1 lemon; 1 tbsp butter",
         "Wholewheat tortillas, warmed; Turkish yoghurt"
       ],
       "steps": [
-        "Soften onion in oil until golden, 8 min. Add ginger, hing, cumin, turmeric, 1 tsp garam masala and purée; fry 2 min.",
+        "Cook onion in oil until the water is gone and it turns golden, 8–10 min. Add ginger, hing, cumin, turmeric, 1 tsp garam masala and purée; fry 2 min.",
         "Add lentils, tomatoes, coconut milk and water. Simmer 20 min, stirring.",
         "Stir in spinach; 3 min. Finish with butter, the rest of the garam masala and lemon juice.",
         "Warm tortillas 2 min in the air fryer; serve with yoghurt."
@@ -306,10 +306,16 @@
         "Beetroot 500 g",
         "Red cabbage × 1 small, apple × 1",
         "Cucumbers × 3, tomatoes × 3",
-        "Pak choi × 2, spring onions × 2 bunches",
+        "Pak choi × 2, spring onions × 2 bunches (shawarma, chicken sauce)",
         "Mushrooms (champinjoner) 250 g",
         "Lime × 1",
         "Flat-leaf parsley × 2 pots, dill × 1 pot"
+      ]
+    },
+    {
+      "section": "Frozen",
+      "items": [
+        "Frozen chopped onion (hackad lök, fryst) 450 g × 1"
       ]
     },
     {
