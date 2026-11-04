@@ -143,22 +143,23 @@
       "name": "Prawn, leek & tomato orzo",
       "cuisine": "Mediterranean",
       "protein": "fish",
-      "minutes": 25,
+      "minutes": 30,
       "appliance": "Stove",
       "portions": 3,
       "ingredients": [
         "400 g frozen peeled vannamei prawns, thawed under cold water",
-        "1 leek, sliced; 1 tbsp olive oil",
+        "1 leek, sliced; 2 tbsp olive oil",
+        "1 tbsp tomato purée, 1 tsp smoked paprika, ½ tsp chilli flakes (adults: extra at the table)",
         "250 g wholewheat orzo",
         "400 g crushed tomatoes, 5 dl water or unsalted stock",
-        "½ tsp chilli flakes (adults: extra at the table)",
-        "1 lemon, flat-leaf parsley"
+        "1 lemon, flat-leaf parsley, 1 tbsp butter"
       ],
       "steps": [
-        "Soften leek in oil, 5 min.",
+        "Soften leek in oil until golden, 8 min.",
+        "Add purée, paprika and chilli; fry 1–2 min until the purée darkens.",
         "Add orzo, tomatoes and water. Simmer 10–12 min, stirring, until the orzo is tender.",
         "Stir in prawns; heat 2–3 min until hot through.",
-        "Finish with lemon zest, juice and chopped parsley."
+        "Off the heat, stir in butter, lemon zest, juice and plenty of parsley."
       ]
     },
     {
@@ -166,23 +167,23 @@
       "name": "Swedish meatballs with mash & braised red cabbage",
       "cuisine": "Swedish",
       "protein": "red-meat",
-      "minutes": 45,
+      "minutes": 50,
       "appliance": "Air fryers + stove",
       "portions": 7,
       "ingredients": [
         "750 g beef mince (nötfärs)",
-        "1 dl rolled oats, 1 dl milk, 1 egg, 1 onion finely grated, ½ tsp ground allspice (kryddpeppar)",
+        "1 dl rolled oats, 1 dl milk, 1 egg, 1 onion finely grated, ½ tsp ground allspice (kryddpeppar), ¼ tsp nutmeg, black pepper",
         "1.5 kg potatoes, scrubbed; 1–2 dl milk, 1 tbsp unsalted butter",
-        "½ red cabbage, shredded; 1 apple, grated; 1 tbsp rapeseed oil; 1 tbsp water",
-        "2 dl crème fraîche, 2 dl unsalted stock, 1 tsp low-salt soy",
-        "Black pepper"
+        "½ red cabbage, shredded; 1 apple, grated; 1 tbsp rapeseed oil; 1 tbsp water; ½ tsp cinnamon; 1 tbsp rice vinegar",
+        "250 g mushrooms (champinjoner), finely chopped; 1 tbsp butter",
+        "2 dl crème fraîche, 2 dl unsalted stock, flat-leaf parsley"
       ],
       "steps": [
-        "Soak oats in milk 5 min; mix with mince, egg, onion and allspice. Roll ~40 balls.",
-        "Air fry in both air fryers at 200°C for 10–12 min, shaking halfway.",
+        "Soak oats in milk 5 min; mix with mince, egg, onion, allspice, nutmeg and pepper. Roll ~40 balls.",
+        "Air fry in both air fryers at 200°C for 10–12 min, shaking halfway, until well browned.",
         "Boil potatoes with skin 20 min; mash with milk and butter.",
-        "Braise cabbage and apple in oil and water, lid on, 15 min.",
-        "Simmer crème fraîche, stock and soy 3 min for the sauce; pepper to taste."
+        "Braise cabbage, apple and cinnamon in oil and water, lid on, 15 min. Stir in the vinegar.",
+        "Fry mushrooms in butter on high heat until deep brown, 8 min. Add crème fraîche and stock; simmer 5 min. Plenty of pepper, then parsley."
       ],
       "note": "Freezes well — freeze 1 portion as buffer."
     },
@@ -221,14 +222,14 @@
       "ingredients": [
         "4 salmon fillets (laxfilé), thawed",
         "500 g beetroot, 3 carrots, 2 parsnips, in wedges",
-        "1 red onion, in wedges; 2 tbsp rapeseed oil; 1 tsp dried thyme",
-        "2 dl Turkish yoghurt, fresh dill, 1 lemon"
+        "1 red onion, in wedges; 2 tbsp rapeseed oil; 1 tsp dried thyme, 1 tsp ground cumin, 1 tsp smoked paprika, black pepper",
+        "2 dl Turkish yoghurt, fresh dill, 1 lemon, olive oil to finish"
       ],
       "steps": [
-        "Toss root veg and onion with oil and thyme. Roast at 220°C for 25 min.",
-        "Push veg aside, add salmon, top with lemon zest. Roast 12 min more.",
-        "Mix yoghurt with chopped dill and lemon juice.",
-        "Serve with lemon wedges."
+        "Toss root veg and onion with oil, thyme, cumin, paprika and pepper. Roast at 220°C for 25 min, until the edges char.",
+        "Push veg aside, add salmon, top with lemon zest and pepper. Roast 12 min more.",
+        "Mix yoghurt with plenty of chopped dill and half the lemon juice.",
+        "Squeeze the rest of the lemon over the veg, drizzle with olive oil and serve."
       ]
     },
     {
@@ -236,44 +237,46 @@
       "name": "Red lentil & spinach dal with flatbread",
       "cuisine": "Indian",
       "protein": "vegetarian",
-      "minutes": 35,
+      "minutes": 40,
       "appliance": "Stove",
       "portions": 4,
       "ingredients": [
         "3 dl red lentils, rinsed",
         "1 onion, chopped; 4 cm ginger, grated; pinch of asafoetida (hing)",
-        "1 tsp ground cumin, 1 tsp turmeric, 1 tsp garam masala",
+        "1 tsp ground cumin, 1 tsp turmeric, 2 tsp garam masala (1 for the end); 1 tbsp tomato purée",
         "400 g crushed tomatoes, 400 ml coconut milk, 5 dl water",
-        "225 g frozen chopped spinach; 1 lemon",
+        "225 g frozen chopped spinach; 1 lemon; 1 tbsp butter",
         "Wholewheat tortillas, warmed; Turkish yoghurt"
       ],
       "steps": [
-        "Soften onion in oil, 5 min. Add ginger, hing and spices; 1 min.",
+        "Soften onion in oil until golden, 8 min. Add ginger, hing, cumin, turmeric, 1 tsp garam masala and purée; fry 2 min.",
         "Add lentils, tomatoes, coconut milk and water. Simmer 20 min, stirring.",
-        "Stir in spinach; 3 min. Squeeze in lemon.",
+        "Stir in spinach; 3 min. Finish with butter, the rest of the garam masala and lemon juice.",
         "Warm tortillas 2 min in the air fryer; serve with yoghurt."
       ]
     },
     {
       "id": "miso-ginger-chicken-soba",
-      "name": "Miso-ginger chicken with soba & pak choi",
-      "cuisine": "Japanese",
+      "name": "Ginger-spring onion chicken with noodles & pak choi",
+      "cuisine": "Asian",
       "protein": "poultry",
-      "minutes": 30,
+      "minutes": 35,
       "appliance": "Air fryer + stove",
       "portions": 4,
       "ingredients": [
         "700 g chicken thigh fillets, in strips",
-        "1 tbsp white miso, 4 cm ginger grated, 1 tbsp sesame oil, 1 tsp rice vinegar",
-        "250 g soba noodles",
+        "4 cm ginger grated, 1 tbsp sesame oil, ½ tsp ground white or black pepper",
+        "Sauce: 1 bunch spring onions, finely sliced; 4 cm ginger, grated; 3 tbsp rapeseed oil; 2 tbsp rice vinegar; 1 lime",
+        "250 g egg noodles",
         "2 pak choi, halved; 2 carrots, in ribbons",
-        "2 spring onions, 1 tbsp sesame seeds; low-salt soy at the table"
+        "1 tbsp sesame seeds, toasted; low-salt soy at the table for adults"
       ],
       "steps": [
-        "Mix miso, ginger, sesame oil and vinegar; toss with chicken.",
-        "Air fry chicken at 200°C for 12 min, shaking halfway.",
-        "Cook soba; add pak choi and carrot for the last 2 min. Drain and rinse.",
-        "Top noodles with chicken, spring onion and sesame seeds."
+        "Toss chicken with ginger, sesame oil and pepper.",
+        "Air fry chicken at 200°C for 12–14 min, shaking halfway, until golden.",
+        "Sauce: put spring onion and ginger in a heatproof bowl. Heat the oil until shimmering, pour over (it sizzles), then stir in vinegar and lime juice.",
+        "Cook noodles; add pak choi and carrot for the last 2 min. Drain.",
+        "Toss noodles with half the sauce; top with chicken, the rest of the sauce and sesame seeds."
       ]
     },
     {
@@ -303,8 +306,16 @@
         "Beetroot 500 g",
         "Red cabbage × 1 small, apple × 1",
         "Cucumbers × 3, tomatoes × 3",
-        "Pak choi × 2, spring onions × 1 bunch",
-        "Flat-leaf parsley × 1 pot, dill × 1 pot"
+        "Pak choi × 2, spring onions × 2 bunches",
+        "Mushrooms (champinjoner) 250 g",
+        "Lime × 1",
+        "Flat-leaf parsley × 2 pots, dill × 1 pot"
+      ]
+    },
+    {
+      "section": "Spices",
+      "items": [
+        "Ground nutmeg (malen muskot), if out"
       ]
     },
     {
