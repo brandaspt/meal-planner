@@ -1,0 +1,236 @@
+{
+  "start": "2026-11-28",
+  "end": "2026-12-04",
+  "meals": [
+    { "date": "2026-11-28", "slot": "lunch", "kind": "cook", "recipe": "falafel-pittas" },
+    { "date": "2026-11-28", "slot": "dinner", "kind": "big", "recipe": "greek-lemon-chicken-potatoes" },
+    { "date": "2026-11-29", "slot": "lunch", "kind": "leftover", "recipe": "greek-lemon-chicken-potatoes", "note": "from Sat dinner" },
+    { "date": "2026-11-29", "slot": "dinner", "kind": "big", "recipe": "pastitsio" },
+    { "date": "2026-11-30", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "greek-lemon-chicken-potatoes", "note": "from Sat dinner" },
+    { "date": "2026-11-30", "slot": "dinner", "kind": "leftover", "recipe": "pastitsio", "note": "from Sun dinner" },
+    { "date": "2026-12-01", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "pastitsio", "note": "from Sun dinner" },
+    { "date": "2026-12-01", "slot": "dinner", "kind": "cook", "recipe": "kerala-fish-curry" },
+    { "date": "2026-12-02", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "kerala-fish-curry", "note": "from Tue dinner" },
+    { "date": "2026-12-02", "slot": "dinner", "kind": "cook", "recipe": "mushroom-kale-barley-orzotto" },
+    { "date": "2026-12-03", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "mushroom-kale-barley-orzotto", "note": "from Wed dinner" },
+    { "date": "2026-12-03", "slot": "dinner", "kind": "cook", "recipe": "lemongrass-chicken-noodle-bowls" },
+    { "date": "2026-12-04", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "lemongrass-chicken-noodle-bowls", "note": "from Thu dinner" },
+    { "date": "2026-12-04", "slot": "dinner", "kind": "assisted", "recipe": "panko-cod-chips" }
+  ],
+  "prep": [
+    { "date": "2026-11-28", "text": "ICA shop (list below). Put the 700 g chicken for Thu straight in the freezer." },
+    { "date": "2026-11-28", "text": "Lunch: falafel makes 3, eat it all." },
+    { "date": "2026-11-28", "text": "Dinner: Greek chicken makes 6. Box 2.5 for Sun lunch and 1 for Mon lunch; make the salad fresh each time." },
+    { "date": "2026-11-29", "text": "Dinner: pastitsio makes 7 (about 1 h 40 min, half of it in the oven). Box 2.5 for Mon dinner and 1 for Tue lunch; freeze 1." },
+    { "date": "2026-11-30", "text": "No cooking. Evening: move 800 g cod from freezer to fridge to thaw." },
+    { "date": "2026-12-01", "text": "Dinner: curry makes 4. Box 1 with rice for Wed lunch." },
+    { "date": "2026-12-02", "text": "Dinner: orzotto makes 4. Box 1 for Thu lunch. Evening: move the chicken and 400 g cod from freezer to fridge." },
+    { "date": "2026-12-03", "text": "Dinner: noodle bowls make 4. Box 1 for Fri lunch with the dressing apart." },
+    { "date": "2026-12-04", "text": "Assisted-quick dinner. Freezer buffer: 1 tagine + 1 pastitsio." }
+  ],
+  "recipes": [
+    {
+      "id": "falafel-pittas",
+      "name": "Air-fryer falafel pittas with tahini yoghurt & quick pickles",
+      "cuisine": "Middle Eastern",
+      "protein": "vegetarian",
+      "minutes": 30,
+      "appliance": "Air fryers",
+      "portions": 3,
+      "ingredients": [
+        "2 cans chickpeas, rinsed and patted dry",
+        "50 g frozen chopped onion (thawed, squeezed); a big handful of flat-leaf parsley; 2 tsp ground cumin, 1 tsp smoked paprika; 1 lemon; black pepper",
+        "3 tbsp plain flour (vetemjöl), 1 tsp baking powder, 2 tbsp olive oil",
+        "6 wholemeal pittas (fullkornspitabröd)",
+        "1 cucumber, thinly sliced; 2 tbsp rice vinegar; 3 tomatoes; 1 little gem lettuce",
+        "2 dl Turkish yoghurt, 2 tbsp tahini"
+      ],
+      "steps": [
+        "Blitz chickpeas, onion, parsley, spices, lemon zest, flour, baking powder, oil and pepper to a coarse paste (food processor or stick blender). Shape 18 small patties.",
+        "Brush with oil; air fry at 200°C for 12–14 min in both air fryers, turning halfway, until crisp.",
+        "Toss cucumber with the vinegar; leave 10 min.",
+        "Whisk yoghurt, tahini and the lemon juice.",
+        "Warm the pittas; fill with falafel, tomato, lettuce, pickles and sauce."
+      ]
+    },
+    {
+      "id": "greek-lemon-chicken-potatoes",
+      "name": "Greek lemon chicken & potatoes with village salad",
+      "cuisine": "Greek",
+      "protein": "poultry",
+      "minutes": 60,
+      "appliance": "Oven",
+      "portions": 6,
+      "ingredients": [
+        "1.2 kg chicken thigh fillets (kycklinglårfilé)",
+        "1.5 kg potatoes, scrubbed, in wedges; 3 dl water",
+        "3 lemons; 4 tbsp olive oil; 2 tsp dried oregano, 1 tsp dried thyme; black pepper",
+        "3 dl Turkish yoghurt; fresh dill",
+        "Salad: 2 cucumbers, 4 tomatoes, 1 red pepper, 2 spring onions, 100 g kalamata olives, 100 g feta, 1 tbsp red wine vinegar, olive oil, oregano"
+      ],
+      "steps": [
+        "Toss potatoes with half the oil, the juice of 2 lemons, the oregano, thyme and pepper in a big roasting tin; add the water. Roast at 220°C for 20 min.",
+        "Toss chicken with the rest of the oil, the zest of 2 lemons and more oregano and pepper; nestle among the potatoes. Roast 30–35 min, until the chicken is golden and the potatoes have soaked up the juices.",
+        "Grate ½ cucumber, squeeze out the water; mix with yoghurt and snipped dill.",
+        "Salad: chop cucumber, tomato and pepper; snip the spring onion; add olives, crumbled feta, vinegar, oil and oregano.",
+        "Squeeze the last lemon over the tin before serving."
+      ]
+    },
+    {
+      "id": "pastitsio",
+      "name": "Pastitsio (Greek baked pasta with beef & béchamel)",
+      "cuisine": "Greek",
+      "protein": "red-meat",
+      "minutes": 100,
+      "appliance": "Stove + oven",
+      "portions": 7,
+      "ingredients": [
+        "800 g beef mince (nötfärs); 2 tbsp olive oil",
+        "200 g frozen chopped onion; 2 carrots, grated",
+        "2 tbsp tomato purée; 1 tsp cinnamon, ½ tsp ground allspice, 1 tsp dried oregano, 2 bay leaves, black pepper",
+        "2 × 400 g crushed tomatoes; 1 dl water",
+        "400 g wholewheat penne",
+        "Béchamel: 50 g butter, 5 tbsp plain flour, 7 dl milk, ¼ tsp nutmeg, 1 egg, 60 g parmesan, grated",
+        "400 g frozen broccoli, to serve"
+      ],
+      "steps": [
+        "Brown mince in oil in two batches until deep brown. Add onion and carrot; cook until the water is gone, 8 min.",
+        "Add purée, cinnamon, allspice and oregano; fry 2 min. Add tomatoes, water and bay; simmer 30 min until thick. Remove the bay.",
+        "Cook pasta 2 min short of the pack time; drain, mix into the sauce and spread in a large baking dish.",
+        "Béchamel: melt butter, stir in flour for 1 min, then whisk in the milk a little at a time; simmer 5 min until thick. Off the heat, whisk in nutmeg, egg and half the parmesan.",
+        "Pour over the pasta and top with the rest of the parmesan. Bake at 200°C for 30 min until golden; rest 10 min.",
+        "Steam the broccoli and serve alongside."
+      ],
+      "note": "Freezes well — freeze 1 portion as buffer."
+    },
+    {
+      "id": "kerala-fish-curry",
+      "name": "Kerala-style coconut fish curry with brown rice",
+      "cuisine": "Indian",
+      "protein": "fish",
+      "minutes": 40,
+      "appliance": "Stove",
+      "portions": 4,
+      "ingredients": [
+        "800 g frozen cod (torsk), thawed, in chunks",
+        "150 g frozen chopped onion; 4 cm ginger, grated; pinch of asafoetida (hing), if you have it; 2 tbsp rapeseed oil",
+        "1 tsp turmeric, 1 tsp ground cumin, 1 tsp garam masala; 1 tbsp tomato purée",
+        "500 ml coconut milk (2 × 250 ml); 400 g crushed tomatoes; 2 dl water",
+        "300 g frozen green beans (haricots verts)",
+        "1 lime; chilli flakes for adults",
+        "3 dl brown rice"
+      ],
+      "steps": [
+        "Start the rice.",
+        "Cook onion in oil until the water is gone and it turns golden, 8–10 min. Add ginger, hing, spices and purée; fry 2 min.",
+        "Add coconut milk, tomatoes and water; simmer 10 min. Add the beans; 5 min more.",
+        "Slide in the fish and simmer gently 5–6 min, until it flakes. Stir as little as possible.",
+        "Finish with lime juice; serve with rice and chilli at the table."
+      ]
+    },
+    {
+      "id": "mushroom-kale-barley-orzotto",
+      "name": "Mushroom, kale & white bean barley risotto",
+      "cuisine": "Italian",
+      "protein": "vegetarian",
+      "minutes": 50,
+      "appliance": "Stove",
+      "portions": 4,
+      "ingredients": [
+        "3 dl pearl barley (korngryn)",
+        "400 g mushrooms (champinjoner), sliced; 2 tbsp olive oil; 1 tbsp butter",
+        "100 g frozen chopped onion; 1 tsp dried thyme; black pepper",
+        "1.2 l hot water or unsalted stock; parmesan rind (optional)",
+        "150 g kale (grönkål), torn; 1 can white beans, rinsed",
+        "50 g parmesan, grated; 1 lemon; flat-leaf parsley"
+      ],
+      "steps": [
+        "Fry mushrooms in oil on high heat in two batches until deep brown, 6–8 min each; set aside.",
+        "Cook onion in the same pan until the water is gone and it turns golden. Add barley and thyme; toast 2 min.",
+        "Add the water a ladle at a time with the parmesan rind; simmer 35–40 min, stirring often, until creamy and just tender.",
+        "Stir in kale, beans and mushrooms for the last 5 min.",
+        "Off the heat, stir in butter, parmesan, lemon zest and juice, lots of pepper and parsley."
+      ]
+    },
+    {
+      "id": "lemongrass-chicken-noodle-bowls",
+      "name": "Lemongrass chicken rice-noodle bowls with herbs & lime",
+      "cuisine": "Vietnamese",
+      "protein": "poultry",
+      "minutes": 35,
+      "appliance": "Air fryer + stove",
+      "portions": 4,
+      "ingredients": [
+        "700 g chicken thigh fillets, thawed",
+        "2 lemongrass stalks, finely chopped; 4 cm ginger, grated; 1 tbsp rapeseed oil, 1 tsp sesame oil; ½ tsp turmeric; black pepper",
+        "250 g rice noodles",
+        "2 carrots, in ribbons; 1 cucumber, in sticks; 1 little gem lettuce",
+        "Dressing: 2 limes, 2 tbsp rice vinegar, 2 tbsp rapeseed oil, 2 cm ginger, grated, 1 spring onion, snipped; chilli flakes for adults",
+        "Fresh mint and basil; 1 tbsp sesame seeds, toasted"
+      ],
+      "steps": [
+        "Toss chicken with lemongrass, ginger, oils, turmeric and pepper; leave 10 min.",
+        "Air fry at 200°C for 14–16 min, shaking halfway, until charred at the edges; slice.",
+        "Cook noodles per the pack; rinse in cold water.",
+        "Whisk the dressing.",
+        "Build bowls: noodles, carrot, cucumber, lettuce, chicken, lots of mint and basil, dressing and sesame seeds."
+      ]
+    },
+    {
+      "id": "panko-cod-chips",
+      "name": "Panko-lemon cod, air-fryer chips & buttered corn",
+      "cuisine": "Family",
+      "protein": "fish",
+      "minutes": 20,
+      "appliance": "Air fryers",
+      "portions": 3,
+      "ingredients": [
+        "400 g frozen cod, thawed",
+        "1 egg; 1 dl panko; 1 lemon; black pepper",
+        "700 g potatoes, in chips; 1 tbsp rapeseed oil; ½ tsp smoked paprika",
+        "250 g frozen sweetcorn; 1 tsp butter",
+        "1 dl Turkish yoghurt"
+      ],
+      "steps": [
+        "Toss chips with oil and paprika; air fry at 200°C for 18–20 min, shaking twice.",
+        "Dip cod in beaten egg, then in panko mixed with lemon zest and pepper. Air fry in the second air fryer at 200°C for 10–12 min.",
+        "Heat corn with butter; mix yoghurt with lemon juice as a dip."
+      ]
+    }
+  ],
+  "ica": [
+    {
+      "section": "Fruit & veg",
+      "items": [
+        "Cucumbers × 4, tomatoes × 7",
+        "Little gem lettuce × 2, red pepper × 1",
+        "Spring onions × 1 bunch",
+        "Mushrooms (champinjoner) 400 g",
+        "Kale (grönkål) 150 g",
+        "Lemongrass (citrongräs) × 2 stalks, limes × 2",
+        "Flat-leaf parsley × 2 pots, dill × 1 pot, mint × 1 pot, basil × 1 pot"
+      ]
+    },
+    {
+      "section": "Bread & pantry",
+      "items": [
+        "Wholemeal pittas (fullkornspitabröd) × 6",
+        "Plain flour (vetemjöl), baking powder — if out"
+      ]
+    },
+    {
+      "section": "Meat",
+      "items": [
+        "Chicken thigh fillets (kycklinglårfilé) 1.9 kg (freeze 700 g for Thu)",
+        "Beef mince (nötfärs) 800 g"
+      ]
+    },
+    {
+      "section": "Dairy",
+      "items": [
+        "Milk 1 l",
+        "Butter — if out"
+      ]
+    }
+  ]
+}

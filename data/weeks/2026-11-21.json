@@ -1,0 +1,248 @@
+{
+  "start": "2026-11-21",
+  "end": "2026-11-27",
+  "meals": [
+    { "date": "2026-11-21", "slot": "lunch", "kind": "cook", "recipe": "lamb-kofta-pittas" },
+    { "date": "2026-11-21", "slot": "dinner", "kind": "big", "recipe": "chicken-apricot-tagine" },
+    { "date": "2026-11-22", "slot": "lunch", "kind": "leftover", "recipe": "chicken-apricot-tagine", "note": "from Sat dinner" },
+    { "date": "2026-11-22", "slot": "dinner", "kind": "big", "recipe": "beef-paprika-goulash" },
+    { "date": "2026-11-23", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "chicken-apricot-tagine", "note": "from Sat dinner" },
+    { "date": "2026-11-23", "slot": "dinner", "kind": "leftover", "recipe": "beef-paprika-goulash", "note": "from Sun dinner" },
+    { "date": "2026-11-24", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "beef-paprika-goulash", "note": "from Sun dinner" },
+    { "date": "2026-11-24", "slot": "dinner", "kind": "cook", "recipe": "salmon-dill-fishcakes" },
+    { "date": "2026-11-25", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "salmon-dill-fishcakes", "note": "from Tue dinner" },
+    { "date": "2026-11-25", "slot": "dinner", "kind": "cook", "recipe": "sweet-potato-bean-quesadillas" },
+    { "date": "2026-11-26", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "sweet-potato-bean-quesadillas", "note": "from Wed dinner" },
+    { "date": "2026-11-26", "slot": "dinner", "kind": "cook", "recipe": "peanut-sesame-chicken-noodles" },
+    { "date": "2026-11-27", "slot": "lunch", "kind": "leftover", "solo": true, "recipe": "peanut-sesame-chicken-noodles", "note": "from Thu dinner" },
+    { "date": "2026-11-27", "slot": "dinner", "kind": "assisted", "recipe": "prawn-pea-lemon-pasta" }
+  ],
+  "prep": [
+    { "date": "2026-11-21", "text": "ICA shop (list below). Check the cupboard first for tins, couscous and spices." },
+    { "date": "2026-11-21", "text": "Lunch: kofta makes 3, eat it all." },
+    { "date": "2026-11-21", "text": "Dinner: tagine makes 7. Box 2.5 for Sun lunch and 1 for Mon lunch; freeze 1. Keep half the couscous for Sun lunch." },
+    { "date": "2026-11-22", "text": "Dinner: goulash makes 6 (about 1 h 50 min, mostly simmering). Box 2.5 for Mon dinner and 1 for Tue lunch, with potatoes." },
+    { "date": "2026-11-23", "text": "No cooking. Freezer buffer: 1 tagine — swap into any solo lunch." },
+    { "date": "2026-11-24", "text": "Coop delivery. Dinner: fishcakes make 4 (salmon goes straight from frozen into the air fryer). Box 1 for Wed lunch." },
+    { "date": "2026-11-25", "text": "Dinner: quesadillas make 4. Box 1 with salsa kept separate for Thu lunch." },
+    { "date": "2026-11-26", "text": "Dinner: noodles make 4. Box 1 for Fri lunch. Evening: move the prawns from freezer to fridge." },
+    { "date": "2026-11-27", "text": "Assisted-quick dinner. Tomorrow is the week B ICA shop." }
+  ],
+  "recipes": [
+    {
+      "id": "lamb-kofta-pittas",
+      "name": "Lamb kofta pittas with mint yoghurt & tomato salad",
+      "cuisine": "Middle Eastern",
+      "protein": "red-meat",
+      "minutes": 30,
+      "appliance": "Air fryers",
+      "portions": 3,
+      "ingredients": [
+        "500 g lamb mince (lammfärs)",
+        "50 g frozen chopped onion (thawed, squeezed); 1 tsp ground cumin, 1 tsp smoked paprika, ½ tsp cinnamon, black pepper; flat-leaf parsley",
+        "6 wholemeal pittas (fullkornspitabröd)",
+        "2 dl Turkish yoghurt; fresh mint; 1 lemon",
+        "1 cucumber, 3 tomatoes, 2 spring onions, 1 tbsp olive oil"
+      ],
+      "steps": [
+        "Mix mince with onion, spices, pepper and snipped parsley; shape 12 fingers.",
+        "Air fry at 200°C for 10–12 min, turning halfway, until well browned.",
+        "Mix yoghurt with snipped mint, lemon zest and half the juice.",
+        "Dice cucumber and tomato; snip spring onion; dress with olive oil and the rest of the lemon.",
+        "Warm pittas 2 min in the second air fryer; fill with kofta, salad and yoghurt."
+      ]
+    },
+    {
+      "id": "chicken-apricot-tagine",
+      "name": "Chicken, chickpea & apricot tagine with couscous",
+      "cuisine": "Moroccan",
+      "protein": "poultry",
+      "minutes": 60,
+      "appliance": "Stove",
+      "portions": 7,
+      "ingredients": [
+        "1.2 kg chicken thigh fillets (kycklinglårfilé), in large chunks; 2 tbsp olive oil",
+        "200 g frozen chopped onion; 2 carrots, in coins; 4 cm ginger, grated",
+        "2 tsp ground cumin, 2 tsp paprika, 1 tsp cinnamon, 1 tsp turmeric, black pepper; 2 tbsp tomato purée",
+        "2 cans chickpeas, rinsed; 400 g crushed tomatoes; 4 dl water; 100 g dried apricots (no added sugar), halved",
+        "1 lemon; flat-leaf parsley and mint",
+        "5 dl couscous; 1 tbsp butter"
+      ],
+      "steps": [
+        "Brown chicken in oil in two batches until deep golden; set aside.",
+        "Cook onion and carrot in the same pan until the water is gone and it turns golden, 10 min. Add ginger, spices and purée; fry 2 min.",
+        "Return chicken; add chickpeas, tomatoes, water and apricots. Simmer, lid half on, 30 min until thick.",
+        "Pour boiling water over the couscous and butter, cover 5 min, fluff with a fork.",
+        "Finish the tagine with lemon zest and juice and plenty of parsley and mint."
+      ],
+      "note": "Freezes well — freeze 1 portion as buffer."
+    },
+    {
+      "id": "beef-paprika-goulash",
+      "name": "Beef & paprika goulash with potatoes",
+      "cuisine": "Hungarian",
+      "protein": "red-meat",
+      "minutes": 110,
+      "appliance": "Stove",
+      "portions": 6,
+      "ingredients": [
+        "1 kg beef stewing chunks (högrev or grytbitar); 2 tbsp rapeseed oil",
+        "200 g frozen chopped onion; 2 tbsp tomato purée",
+        "2 tbsp paprika (1 sweet, 1 smoked), 1 tsp caraway seeds (kummin), crushed; 1 tsp dried thyme; 2 bay leaves; black pepper",
+        "2 red peppers, in strips; 2 carrots, in chunks; 400 g crushed tomatoes; 5 dl water",
+        "1.5 kg potatoes, scrubbed",
+        "2 dl crème fraîche; 1 tbsp red wine vinegar; flat-leaf parsley"
+      ],
+      "steps": [
+        "Brown beef in oil in 3 batches until deep brown, 4–5 min each; set aside.",
+        "Cook onion in the pan until the water is gone and it turns golden, 10 min. Add purée, paprika and caraway; fry 1 min without burning.",
+        "Return beef; add peppers, carrots, tomatoes, water, thyme and bay. Simmer, lid on, 1 h 15 min until the beef is tender.",
+        "Boil the potatoes in their skins for the last 20 min.",
+        "Stir the vinegar and plenty of pepper into the goulash. Serve with potatoes, a spoon of crème fraîche and parsley."
+      ]
+    },
+    {
+      "id": "salmon-dill-fishcakes",
+      "name": "Salmon & dill fishcakes with crushed peas",
+      "cuisine": "Nordic",
+      "protein": "fish",
+      "minutes": 45,
+      "appliance": "Air fryers + stove",
+      "portions": 4,
+      "ingredients": [
+        "4 frozen salmon fillets (laxfilé, 500 g)",
+        "700 g potatoes, scrubbed, in chunks",
+        "1 egg; 2 spring onions; fresh dill; 1 lemon; black pepper; 1 dl panko; 1 tbsp rapeseed oil",
+        "400 g frozen peas; 1 tbsp butter",
+        "2 dl Turkish yoghurt"
+      ],
+      "steps": [
+        "Boil potatoes 15 min, drain and mash roughly. Meanwhile air fry the salmon from frozen at 180°C for 14 min; flake.",
+        "Mix salmon, potato, egg, snipped spring onion, plenty of dill, lemon zest and pepper. Shape 12 cakes and coat in panko.",
+        "Brush with oil; air fry at 200°C for 12 min in both air fryers, turning halfway, until golden.",
+        "Cook peas 3 min; crush with butter and half the lemon juice.",
+        "Mix yoghurt with snipped dill and the rest of the lemon juice."
+      ]
+    },
+    {
+      "id": "sweet-potato-bean-quesadillas",
+      "name": "Sweet potato & black bean quesadillas with corn salsa",
+      "cuisine": "Mexican",
+      "protein": "vegetarian",
+      "minutes": 35,
+      "appliance": "Air fryers",
+      "portions": 4,
+      "ingredients": [
+        "600 g sweet potato, in small cubes; 1 tbsp rapeseed oil; 1 tsp ground cumin, 1 tsp smoked paprika",
+        "1 can black beans, rinsed; 150 g grated mozzarella",
+        "8 wholewheat tortillas",
+        "200 g frozen sweetcorn, thawed; 2 tomatoes; 2 spring onions; 1 lime",
+        "2 dl Turkish yoghurt; 1 avocado"
+      ],
+      "steps": [
+        "Toss sweet potato with oil and spices; air fry at 200°C for 15 min, shaking twice.",
+        "Mash roughly with the beans and the juice of ½ lime.",
+        "Spread over 4 tortillas, sprinkle with cheese and top with the rest. Air fry one at a time per air fryer at 190°C for 4–5 min, until crisp.",
+        "Salsa: corn, diced tomato, snipped spring onion and the rest of the lime.",
+        "Cut into wedges; serve with yoghurt, avocado and salsa."
+      ]
+    },
+    {
+      "id": "peanut-sesame-chicken-noodles",
+      "name": "Peanut-sesame chicken noodles with cucumber & edamame",
+      "cuisine": "Asian",
+      "protein": "poultry",
+      "minutes": 30,
+      "appliance": "Air fryer + stove",
+      "portions": 4,
+      "ingredients": [
+        "700 g chicken thigh fillets, in strips; 1 tsp sesame oil; 8 cm ginger, grated; black pepper",
+        "250 g egg noodles; 200 g frozen edamame",
+        "2 carrots, in ribbons; 1 cucumber, in sticks; 2 spring onions",
+        "Sauce: 3 tbsp peanut butter (100% peanuts), 1 tbsp sesame oil, 2 tbsp rice vinegar, 1 lime, 4–5 tbsp hot water",
+        "1 tbsp sesame seeds, toasted; chilli flakes for adults"
+      ],
+      "steps": [
+        "Toss chicken with sesame oil, half the ginger and pepper. Air fry at 200°C for 12–14 min, shaking halfway, until golden.",
+        "Whisk peanut butter, sesame oil, vinegar, lime juice, the rest of the ginger and hot water until smooth.",
+        "Cook noodles, adding edamame for the last 3 min. Drain and rinse briefly.",
+        "Toss noodles with the sauce, carrot and cucumber; top with chicken, snipped spring onion and sesame seeds."
+      ]
+    },
+    {
+      "id": "prawn-pea-lemon-pasta",
+      "name": "Prawn, pea & lemon pasta",
+      "cuisine": "Italian",
+      "protein": "fish",
+      "minutes": 20,
+      "appliance": "Stove",
+      "portions": 3,
+      "ingredients": [
+        "300 g wholewheat pasta (fullkornspasta)",
+        "400 g large frozen peeled prawns, thawed",
+        "200 g frozen peas; 1 tbsp butter, 1 tbsp olive oil; ½ tsp chilli flakes (adults: extra at the table)",
+        "1 dl crème fraîche; 1 lemon; 30 g parmesan, grated; flat-leaf parsley; black pepper"
+      ],
+      "steps": [
+        "Cook pasta, adding the peas for the last 2 min. Save 1 dl of the water, then drain.",
+        "Meanwhile fry prawns in butter and oil 2–3 min until pink; add chilli.",
+        "Toss pasta with prawns, crème fraîche, lemon zest and juice, parmesan and a splash of pasta water.",
+        "Finish with pepper and parsley."
+      ]
+    }
+  ],
+  "ica": [
+    {
+      "section": "Fruit & veg",
+      "items": [
+        "Cucumbers × 2, tomatoes × 5",
+        "Spring onions × 2 bunches (kofta, fishcakes, salsa, noodles)",
+        "Red peppers × 2",
+        "Carrots 1 kg (both weeks)",
+        "Potatoes, firm (fast potatis) 2 kg × 2 (both weeks)",
+        "Lemons × 2, limes × 2, avocado × 1",
+        "Ginger, 1 small piece",
+        "Flat-leaf parsley × 2 pots, mint × 1 pot, dill × 1 pot"
+      ]
+    },
+    {
+      "section": "Bread & pantry",
+      "items": [
+        "Wholemeal pittas (fullkornspitabröd) × 6",
+        "Couscous 500 g × 1",
+        "Dried apricots, no added sugar (torkade aprikoser) 150 g × 1",
+        "Chickpeas (kikärtor) × 2 cans, crushed tomatoes 400 g × 2, tomato purée — if out",
+        "Red wine vinegar (rödvinsvinäger) — if out"
+      ]
+    },
+    {
+      "section": "Spices",
+      "items": [
+        "Sweet paprika (paprikapulver), caraway seeds (kummin hel), bay leaves (lagerblad) — if out"
+      ]
+    },
+    {
+      "section": "Frozen",
+      "items": [
+        "Frozen chopped onion (hackad lök, fryst) 450 g × 1",
+        "Large peeled prawns 400 g — hand-pick (not small räkor), for Fri"
+      ]
+    },
+    {
+      "section": "Meat",
+      "items": [
+        "Lamb mince (lammfärs) 500 g",
+        "Chicken thigh fillets (kycklinglårfilé) 1.2 kg",
+        "Beef stewing chunks (högrev or grytbitar) 1 kg"
+      ]
+    },
+    {
+      "section": "Dairy",
+      "items": [
+        "Turkish yoghurt, small tub (Coop brings 1 kg on Tue)",
+        "Crème fraîche 2 dl",
+        "Butter — if out"
+      ]
+    }
+  ]
+}
