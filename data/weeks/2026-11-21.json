@@ -18,13 +18,13 @@
     { "date": "2026-11-27", "slot": "dinner", "kind": "assisted", "recipe": "prawn-pea-lemon-pasta" }
   ],
   "prep": [
-    { "date": "2026-11-21", "text": "ICA shop (list below). Check the cupboard first for tins, couscous and spices." },
+    { "date": "2026-11-21", "text": "Coop delivery (Fri or Sat morning) has everything for this week. Freeze 1 pack of chicken (700 g, for Thu). ICA: just the prawns, any day before Fri." },
     { "date": "2026-11-21", "text": "Lunch: kofta makes 3, eat it all." },
     { "date": "2026-11-21", "text": "Dinner: tagine makes 7. Box 2.5 for Sun lunch and 1 for Mon lunch; freeze 1. Keep half the couscous for Sun lunch." },
     { "date": "2026-11-22", "text": "Dinner: goulash makes 6 (about 1 h 50 min, mostly simmering). Box 2.5 for Mon dinner and 1 for Tue lunch, with potatoes." },
     { "date": "2026-11-23", "text": "No cooking. Freezer buffer: 1 tagine — swap into any solo lunch." },
-    { "date": "2026-11-24", "text": "Coop delivery. Dinner: fishcakes make 4 (salmon goes straight from frozen into the air fryer). Box 1 for Wed lunch." },
-    { "date": "2026-11-25", "text": "Dinner: quesadillas make 4. Box 1 with salsa kept separate for Thu lunch." },
+    { "date": "2026-11-24", "text": "Dinner: fishcakes make 4 (salmon goes straight from frozen into the air fryer). Box 1 for Wed lunch." },
+    { "date": "2026-11-25", "text": "Dinner: quesadillas make 4. Box 1 with salsa kept separate for Thu lunch. Evening: move the chicken from freezer to fridge." },
     { "date": "2026-11-26", "text": "Dinner: noodles make 4. Box 1 for Fri lunch. Evening: move the prawns from freezer to fridge." },
     { "date": "2026-11-27", "text": "Assisted-quick dinner. Tomorrow is the week B ICA shop." }
   ],
@@ -38,14 +38,14 @@
       "appliance": "Air fryers",
       "portions": 3,
       "ingredients": [
-        "500 g lamb mince (lammfärs)",
+        "400 g lamb mince (lammfärs)",
         "50 g frozen chopped onion (thawed, squeezed); 1 tsp ground cumin, 1 tsp smoked paprika, ½ tsp cinnamon, black pepper; flat-leaf parsley",
-        "6 wholemeal pittas (fullkornspitabröd)",
+        "1 pack pitta bread",
         "2 dl Turkish yoghurt; fresh mint; 1 lemon",
         "1 cucumber, 3 tomatoes, 2 spring onions, 1 tbsp olive oil"
       ],
       "steps": [
-        "Mix mince with onion, spices, pepper and snipped parsley; shape 12 fingers.",
+        "Mix mince with onion, spices, pepper and snipped parsley; shape 10 fingers.",
         "Air fry at 200°C for 10–12 min, turning halfway, until well browned.",
         "Mix yoghurt with snipped mint, lemon zest and half the juice.",
         "Dice cucumber and tomato; snip spring onion; dress with olive oil and the rest of the lemon.",
@@ -61,7 +61,7 @@
       "appliance": "Stove",
       "portions": 7,
       "ingredients": [
-        "1.2 kg chicken thigh fillets (kycklinglårfilé), in large chunks; 2 tbsp olive oil",
+        "1.4 kg chicken thigh fillets (kycklinglårfilé, 2 × 700 g), in large chunks; 2 tbsp olive oil",
         "200 g frozen chopped onion; 2 carrots, in coins; 4 cm ginger, grated",
         "2 tsp ground cumin, 2 tsp paprika, 1 tsp cinnamon, 1 tsp turmeric, black pepper; 2 tbsp tomato purée",
         "2 cans chickpeas, rinsed; 400 g crushed tomatoes; 4 dl water; 100 g dried apricots (no added sugar), halved",
@@ -86,7 +86,7 @@
       "appliance": "Stove",
       "portions": 6,
       "ingredients": [
-        "1 kg beef stewing chunks (högrev or grytbitar); 2 tbsp rapeseed oil",
+        "1 kg beef chuck (högrev), in 4 cm chunks; 2 tbsp rapeseed oil",
         "200 g frozen chopped onion; 2 tbsp tomato purée",
         "2 tbsp paprika (1 sweet, 1 smoked), 1 tsp caraway seeds (kummin), crushed; 1 tsp dried thyme; 2 bay leaves; black pepper",
         "2 red peppers, in strips; 2 carrots, in chunks; 400 g crushed tomatoes; 5 dl water",
@@ -193,54 +193,14 @@
   ],
   "ica": [
     {
-      "section": "Fruit & veg",
-      "items": [
-        "Cucumbers × 2, tomatoes × 5",
-        "Spring onions × 2 bunches (kofta, fishcakes, salsa, noodles)",
-        "Red peppers × 2",
-        "Carrots 1 kg (both weeks)",
-        "Potatoes, firm (fast potatis) 2 kg × 2 (both weeks)",
-        "Lemons × 2, limes × 2, avocado × 1",
-        "Ginger, 1 small piece",
-        "Flat-leaf parsley × 2 pots, mint × 1 pot, dill × 1 pot"
-      ]
-    },
-    {
-      "section": "Bread & pantry",
-      "items": [
-        "Wholemeal pittas (fullkornspitabröd) × 6",
-        "Couscous 500 g × 1",
-        "Dried apricots, no added sugar (torkade aprikoser) 150 g × 1",
-        "Chickpeas (kikärtor) × 2 cans, crushed tomatoes 400 g × 2, tomato purée — if out",
-        "Red wine vinegar (rödvinsvinäger) — if out"
-      ]
-    },
-    {
-      "section": "Spices",
-      "items": [
-        "Sweet paprika (paprikapulver), caraway seeds (kummin hel), bay leaves (lagerblad) — if out"
-      ]
-    },
-    {
       "section": "Frozen",
       "items": [
-        "Frozen chopped onion (hackad lök, fryst) 450 g × 1",
-        "Large peeled prawns 400 g — hand-pick (not small räkor), for Fri"
-      ]
-    },
-    {
-      "section": "Meat",
-      "items": [
-        "Lamb mince (lammfärs) 500 g",
-        "Chicken thigh fillets (kycklinglårfilé) 1.2 kg",
-        "Beef stewing chunks (högrev or grytbitar) 1 kg"
+        "Large peeled prawns 400 g — hand-pick (not small räkor), any day before Fri"
       ]
     },
     {
       "section": "Dairy",
       "items": [
-        "Turkish yoghurt, small tub (Coop brings 1 kg on Tue)",
-        "Crème fraîche 2 dl",
         "Butter — if out"
       ]
     }
